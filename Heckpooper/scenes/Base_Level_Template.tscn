@@ -57,7 +57,7 @@ shadow_opacity = 0.75
 environment = ExtResource("1_q0wml")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_n6hmu")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 672.222, 2.5, -261.719)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 672.891, 9.53714, -261.715)
 view = NodePath("../View")
 jump_strength = 8
 

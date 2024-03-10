@@ -35,7 +35,7 @@ var zoom
 
 func _ready():
 	
-	pitch_pivot.add_excluded_object($"../Player")
+	pitch_pivot.add_excluded_object(target)
 	camera_rotation = rotation_degrees
 	#camera_rotation = target.rotation
 	zoom = starting_zoom
@@ -67,12 +67,23 @@ func _physics_process(delta):
 	#camera.position = lerp(camera.position, Vector3(camera.position.x,camera.position.y,spring_get_hit_length), 4 * delta)
 	#print("pitch pivor rotation: " + str(pitch_pivot.rotation))
 	
+	#Zoom Camera in by adjusting the spring length
+	pitch_pivot.spring_length = lerp(pitch_pivot.spring_length, float(zoom), 4 * delta)
+	pitch_pivot.spring_length = clamp(pitch_pivot.spring_length, zoom_maximum, zoom_minimum )
+	#print("Hit Length: " + str(pitch_pivot.get_hit_length()))
+	
+	#set camera zoom upon hitting a wall
+	var spring_get_hit_length = pitch_pivot.get_hit_length()
+	spring_get_hit_length = clamp(spring_get_hit_length, zoom_maximum, zoom_minimum)
+	
+	camera.position = camera.position.lerp(Vector3(0, 0, pitch_pivot.spring_length), 8 * delta)
+	
 	if(camera_mode == camera_types.Joystick):
 		# Set position and rotation to targets
 		self.position = self.position.lerp(target.position, delta * 4)
 		rotation_degrees = rotation_degrees.lerp(camera_rotation, delta * 6)
 	
-		camera.position = camera.position.lerp(Vector3(0, 0, pitch_pivot.spring_length), 8 * delta)
+		#camera.position = camera.position.lerp(Vector3(0, 0, pitch_pivot.spring_length), 8 * delta)
 	
 		# Handle Joystick input
 		handle_input(delta)
@@ -80,13 +91,7 @@ func _physics_process(delta):
 	if(camera_mode == camera_types.Mouse):		
 		# Set position and rotation to targets
 		self.position = self.position.lerp(target.position, delta * 4)
-		#Zoom Camera in by adjusting the spring length
-		pitch_pivot.spring_length = lerp(pitch_pivot.spring_length, float(zoom), 4 * delta)
-		pitch_pivot.spring_length = clamp(pitch_pivot.spring_length, zoom_maximum, zoom_minimum )
-	#print("Hit Length: " + str(pitch_pivot.get_hit_length()))
-	
-		var spring_get_hit_length = pitch_pivot.get_hit_length()
-		spring_get_hit_length = clamp(spring_get_hit_length, zoom_maximum, zoom_minimum)
+
 		#camera.position = camera.position.lerp(Vector3(0, 0, zoom), 8 * delta)
 		
 

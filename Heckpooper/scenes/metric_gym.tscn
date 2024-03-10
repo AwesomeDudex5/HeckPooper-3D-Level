@@ -15,6 +15,7 @@
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="15_f3nys"]
 
 [sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_nrf7a"]
+margin = 1.23
 length = 0.25
 
 [sub_resource type="LabelSettings" id="LabelSettings_38ys3"]
@@ -500,7 +501,7 @@ shadow_opacity = 0.75
 environment = ExtResource("1_u4km5")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_5cjdd")]
-transform = Transform3D(0.041893, 0, -0.999122, 0, 1, 0, 0.999122, 0, 0.041893, -12.2463, 2.42074, -27.1851)
+transform = Transform3D(0.041893, 0, -0.999122, 0, 1, 0, 0.999122, 0, 0.041893, 44.4479, 2.42074, -27.8094)
 view = NodePath("../View")
 jump_strength = 8
 
@@ -514,7 +515,7 @@ mouse_sensitivity = 0.1
 low_view_bound = 25
 
 [node name="PitchPivot" type="SpringArm3D" parent="View"]
-transform = Transform3D(1, 0, -2.23517e-08, 1.86265e-09, 1, 1.19209e-07, 1.49012e-08, 0, 1, 0, 0.5, 0)
+transform = Transform3D(1, 0, -2.23517e-08, 3.72529e-09, 1, 1.29337e-07, 1.49012e-08, 2.51457e-08, 1, 0, 0.5, 0)
 shape = SubResource("SeparationRayShape3D_nrf7a")
 spring_length = 2.0
 margin = 0.25

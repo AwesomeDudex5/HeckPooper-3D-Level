@@ -51,6 +51,8 @@ var control_mesh:ConvexVolume
 		return block_data
 	set(value):
 		if block_data != value:
+			value.physics_layer = 1
+			value.physics_mask = 1
 			block_data = value
 			control_mesh = ConvexVolume.new()
 			control_mesh.init_from_convex_block_data(block_data)
@@ -81,6 +83,7 @@ var display_mode:DisplayMode.Type = DisplayMode.Type.MATERIAL
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	
 	mesh_instance = MeshInstance3D.new()
 	add_child(mesh_instance)
 	mesh_instance.gi_mode = GeometryInstance3D.GI_MODE_STATIC

@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://b6hwlqkwwc2s5"]
+[gd_scene load_steps=57 format=3 uid="uid://b6hwlqkwwc2s5"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_4si2f"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_78jjf"]
@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dtjvjdjl8cs6e" path="res://models/flag.glb" id="9_mw8td"]
 [ext_resource type="PackedScene" uid="uid://c8up71en5djgm" path="res://objects/platform_falling.tscn" id="11_ek4q7"]
 
-[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_mlhso"]
+[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_mmcxn"]
 margin = 1.23
 length = 0.25
 
@@ -50,6 +50,8 @@ face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_poy5e"]
 albedo_color = Color(0.972549, 0.466667, 0.72549, 1)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_w85xw"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o5lh4"]
 
@@ -976,25 +978,27 @@ shadow_opacity = 0.75
 environment = ExtResource("1_4si2f")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_78jjf")]
-transform = Transform3D(0.928919, 0, 0.370282, 0, 1, 0, -0.370282, 0, 0.928919, 231.331, 1.49659, -86.5944)
+transform = Transform3D(-1, 0, -0.00083762, 0, 1, 0, 0.00083762, 0, -1, 231.858, 1.63061, -85.5842)
 view = NodePath("../View")
 jump_strength = 8
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, 2.938, 2.5, 0)
+transform = Transform3D(-0.0854159, -0.294963, 0.951682, -0.00498856, 0.955288, 0.295633, -0.996333, 0.0205044, -0.0830682, 182.557, 4.53798, -77.4795)
 script = ExtResource("3_1aey8")
 target = NodePath("../Player")
 camera_mode = 1
+zoom_maximum = 2
 mouse_sensitivity = 0.1
-low_view_bound = 90
+low_view_bound = 45
 
 [node name="PitchPivot" type="SpringArm3D" parent="View"]
-shape = SubResource("SeparationRayShape3D_mlhso")
+transform = Transform3D(1, 0, -2.23517e-08, 3.72529e-09, 1, 1.29337e-07, 1.49012e-08, 2.51457e-08, 1, 0, 0.5, 0)
+shape = SubResource("SeparationRayShape3D_mmcxn")
 spring_length = 2.0
 margin = 0.25
 
 [node name="Camera" type="Camera3D" parent="View/PitchPivot"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.00001)
+transform = Transform3D(1, 1.86265e-09, 1.66534e-16, -1.86265e-09, 1, -2.98023e-08, -2.22044e-16, 2.98023e-08, 1, 0, -9.53674e-07, 2)
 current = true
 fov = 40.0
 
@@ -1047,15 +1051,16 @@ transform = Transform3D(150, 0, 0, 0, 750, 0, 0, 0, 150, -141, 2, -306)
 script = ExtResource("7_vk47v")
 block_data = SubResource("Resource_wvwnv")
 
-[node name="Ground" type="MeshInstance3D" parent="Blocks"]
+[node name="Ground" type="MeshInstance3D" parent="Blocks" groups=["Ground"]]
 transform = Transform3D(1932, 0, 0, 0, 50, 0, 0, 0, 1800, -122, 758.105, -441)
 visible = false
 mesh = SubResource("BoxMesh_ctqna")
 surface_material_override/0 = SubResource("StandardMaterial3D_poy5e")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Blocks/Ground"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Blocks/Ground" groups=["Ground"]]
+physics_material_override = SubResource("PhysicsMaterial_w85xw")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/Ground/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/Ground/StaticBody3D" groups=["Ground"]]
 shape = SubResource("BoxShape3D_o5lh4")
 
 [node name="New Ground" type="Node3D" parent="Blocks"]
@@ -2078,5 +2083,3 @@ block_data = SubResource("Resource_ol4i6")
 [node name="SpikeRoom1" type="Node3D" parent="."]
 
 [node name="SpikeRoom2" type="Node3D" parent="."]
-
-[connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]

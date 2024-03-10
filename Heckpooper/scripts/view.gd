@@ -74,9 +74,11 @@ func _physics_process(delta):
 	
 	#set camera zoom upon hitting a wall
 	var spring_get_hit_length = pitch_pivot.get_hit_length()
-	spring_get_hit_length = clamp(spring_get_hit_length, zoom_maximum, zoom_minimum)
+	if(spring_get_hit_length < pitch_pivot.spring_length):
+		spring_get_hit_length = lerp(pitch_pivot.spring_length, pitch_pivot.get_hit_length(), 2 * delta)
+		spring_get_hit_length = clamp(spring_get_hit_length, zoom_maximum, zoom_minimum)
 	
-	camera.position = camera.position.lerp(Vector3(0, 0, pitch_pivot.spring_length), 8 * delta)
+		camera.position = camera.position.lerp(Vector3(0, 0, spring_get_hit_length), 2 * delta)
 	
 	if(camera_mode == camera_types.Joystick):
 		# Set position and rotation to targets

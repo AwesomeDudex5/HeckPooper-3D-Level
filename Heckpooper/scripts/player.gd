@@ -20,6 +20,8 @@ var jump_double = true
 
 var coins = 0
 
+var current_spawn_point
+
 @onready var particles_trail = $ParticlesTrail
 @onready var sound_footsteps = $SoundFootsteps
 @onready var model = $Character
@@ -27,8 +29,13 @@ var coins = 0
 
 # Functions
 
-func _physics_process(delta):
-	
+func _ready():
+	#rotation_direction = get_rotation_degrees().y
+	#rotation.y = rotation_direction
+	current_spawn_point = self.position
+	print(current_spawn_point)
+
+func _physics_process(delta):	
 	# Handle functions
 	
 	handle_controls(delta)
@@ -48,15 +55,15 @@ func _physics_process(delta):
 	
 	# Rotation
 	
+	var desired_direction = Vector3.ZERO
 	if Vector2(velocity.z, velocity.x).length() > 0:
 		rotation_direction = Vector2(velocity.z, velocity.x).angle()
-		
-	rotation.y = lerp_angle(rotation.y, rotation_direction, delta * 10)
+		rotation.y = lerp_angle(rotation.y, rotation_direction, delta * 10)
 	
 	# Falling/respawning
 	
 	if position.y < -10:
-		get_tree().reload_current_scene()
+		death()
 	
 	# Animation for scale (jumping and landing)
 	
@@ -147,3 +154,18 @@ func collect_coin():
 	coins += 1
 	
 	coin_collected.emit(coins)
+
+func death():
+	#get_tree().reload_current_scene()
+	#translate(current_spawn_point)
+	self.position = current_spawn_point
+
+func _on_area_3d_body_entered(body):
+	#print(body.name)
+	if(body.is_in_group("Trap")):
+		death()
+
+func _on_area_3d_area_entered(area):
+	#print(area.name)
+	if(area.is_in_group("Checkpoint")):
+		current_spawn_point = area.get_parent().position

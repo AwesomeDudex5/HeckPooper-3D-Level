@@ -1,4 +1,6 @@
+
 [gd_scene load_steps=16 format=3 uid="uid://bswi03b2842ct"]
+
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_q0wml"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_n6hmu"]
@@ -8,6 +10,10 @@
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="6_sro3e"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="7_kpve0"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="8_5rbnc"]
+
+[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_piwoq"]
+margin = 0.674
+length = 0.25
 
 [sub_resource type="LabelSettings" id="LabelSettings_38ys3"]
 font = ExtResource("6_sro3e")
@@ -20,8 +26,8 @@ script = ExtResource("8_5rbnc")
 selected = false
 active = false
 collsion = true
-physics_layer = 0
-physics_mask = 0
+physics_layer = 1
+physics_mask = 1
 vertex_points = PackedVector3Array(-1, 0, 0, -0.92388, 0, 0.382684, -0.707107, 0, 0.707107, -0.382684, 0, 0.92388, 0, 0, 1, 0.382684, 0, 0.92388, 0.707107, 0, 0.707107, 0.92388, 0, 0.382684, 1, 0, -5.96046e-08, 0.92388, 0, -0.382683, 0.707107, 0, -0.707107, 0.382684, 0, -0.92388, 0, 0, -1, -0.382684, 0, -0.923879, -0.707107, 0, -0.707107, -0.92388, 0, -0.382683, -1, 1, 0, -0.92388, 1, 0.382684, -0.707107, 1, 0.707107, -0.382684, 1, 0.92388, 0, 1, 1, 0.382684, 1, 0.92388, 0.707107, 1, 0.707107, 0.92388, 1, 0.382684, 1, 1, -5.96046e-08, 0.92388, 1, -0.382683, 0.707107, 1, -0.707107, 0.382684, 1, -0.92388, 0, 1, -1, -0.382684, 1, -0.923879, -0.707107, 1, -0.707107, -0.92388, 1, -0.382683)
 vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 active_vertex = -1
@@ -39,12 +45,29 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17)
 
-[sub_resource type="BoxMesh" id="BoxMesh_ctqna"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_poy5e"]
-albedo_color = Color(0.972549, 0.466667, 0.72549, 1)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_o5lh4"]
+[sub_resource type="Resource" id="Resource_orfja"]
+script = ExtResource("8_5rbnc")
+selected = false
+active = false
+collsion = true
+physics_layer = 1
+physics_mask = 1
+vertex_points = PackedVector3Array(0, 74, 0, 0, 74, 2577, 0, 0, 2577, 0, 0, 0, 3490, 74, 0, 3490, 74, 2577, 3490, 0, 2577, 3490, 0, 0)
+vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+active_vertex = -1
+edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
+edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+active_edge = -1
+edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
+face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
+face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
+face_material_indices = PackedInt32Array(-1, -1, -1, -1, -1, -1)
+face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
+face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
+face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
+active_face = -1
+face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
 [sub_resource type="Resource" id="Resource_ptce4"]
 script = ExtResource("8_5rbnc")
@@ -105,22 +128,27 @@ shadow_opacity = 0.75
 environment = ExtResource("1_q0wml")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_n6hmu")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 672.222, 2.5, -261.719)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 364.023, 74.1274, -290.642)
 view = NodePath("../View")
 jump_strength = 8
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, 2.938, 2.5, 0)
+transform = Transform3D(-0.0854159, -0.294963, 0.951682, -0.00498856, 0.955288, 0.295633, -0.996333, 0.0205044, -0.0830682, 335.229, 95.538, -316.692)
 script = ExtResource("3_8xhyb")
 target = NodePath("../Player")
 camera_mode = 1
+zoom_maximum = 2
 mouse_sensitivity = 0.1
-low_view_bound = 90
+low_view_bound = 20
 
-[node name="PitchPivot" type="Node3D" parent="View"]
+[node name="PitchPivot" type="SpringArm3D" parent="View"]
+transform = Transform3D(1, 0, -2.23517e-08, 3.72529e-09, 1, 1.29337e-07, 1.49012e-08, 2.51457e-08, 1, 0, 0.5, 0)
+shape = SubResource("SeparationRayShape3D_piwoq")
+spring_length = 2.0
+margin = 0.25
 
 [node name="Camera" type="Camera3D" parent="View/PitchPivot"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.00001)
+transform = Transform3D(1, 1.86265e-09, 1.66534e-16, -1.86265e-09, 1, -2.98023e-08, -2.22044e-16, 2.98023e-08, 1, 0, -9.53674e-07, 2)
 current = true
 fov = 40.0
 
@@ -168,20 +196,15 @@ vertical_alignment = 1
 
 [node name="Blocks" type="Node3D" parent="."]
 
-[node name="Tree Block" type="Node3D" parent="Blocks"]
-transform = Transform3D(150, 0, 0, 0, 750, 0, 0, 0, 150, -141, 2, -306)
+[node name="Tree Block" type="Node3D" parent="Blocks" groups=["Tree"]]
+transform = Transform3D(150, 0, 0, 0, 400, 0, 0, 0, 150, -141, 75, -306)
 script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_t6ekd")
 
-[node name="Ground" type="MeshInstance3D" parent="Blocks"]
-transform = Transform3D(1932, 0, 0, 0, 50, 0, 0, 0, 1800, -122, 0, -441)
-mesh = SubResource("BoxMesh_ctqna")
-surface_material_override/0 = SubResource("StandardMaterial3D_poy5e")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Blocks/Ground"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/Ground/StaticBody3D"]
-shape = SubResource("BoxShape3D_o5lh4")
+[node name="Block_0" type="Node3D" parent="Blocks" groups=["Ground"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2200, 0, -1950)
+script = ExtResource("7_kpve0")
+block_data = SubResource("Resource_orfja")
 
 [node name="Block_0" type="Node3D" parent="Blocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -277, 162, -163)
@@ -194,14 +217,14 @@ script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_ngqg0")
 
 [node name="North Label" type="Label3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 713.3, 145, -295)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 713.3, 216.882, -295)
 pixel_size = 0.25
 modulate = Color(0, 0, 0, 1)
 text = "NORTH"
 font_size = 1000
 
 [node name="South Label" type="Label3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1095, 145, -295)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1095, 216.882, -295)
 pixel_size = 0.25
 modulate = Color(0, 0, 0, 1)
 text = "SOUTH
@@ -209,14 +232,14 @@ text = "SOUTH
 font_size = 1000
 
 [node name="West Label" type="Label3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.8593, 145, -1316.26)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.8593, 216.882, -1316.26)
 pixel_size = 0.25
 modulate = Color(0, 0, 0, 1)
 text = "WEST"
 font_size = 1000
 
 [node name="East Label" type="Label3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -90.8593, 145, 617.74)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -90.8593, 216.882, 617.74)
 pixel_size = 0.25
 modulate = Color(0, 0, 0, 1)
 text = "EAST"

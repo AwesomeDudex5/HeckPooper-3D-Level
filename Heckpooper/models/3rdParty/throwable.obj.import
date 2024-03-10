@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bs1oy3nh6efw7"
+path="res://.godot/imported/throwable.obj-ad57dd60ce74cfba286625b052043ab5.mesh"
+
+[deps]
+
+files=["res://.godot/imported/throwable.obj-ad57dd60ce74cfba286625b052043ab5.mesh"]
+
+source_file="res://models/3rdParty/throwable.obj"
+dest_files=["res://.godot/imported/throwable.obj-ad57dd60ce74cfba286625b052043ab5.mesh", "res://.godot/imported/throwable.obj-ad57dd60ce74cfba286625b052043ab5.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfmydxycmju8w"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_i3l2k"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q1aaw"]
+size = Vector3(0.658264, 1, 1)
+
+[node name="Trap Block" type="MeshInstance3D" groups=["Trap"]]
+transform = Transform3D(5.55684, 0, 0, 0, 9.91567, 0, 0, 0, 4.17448, -19.3948, 1.81979, -25.4802)
+mesh = SubResource("PrismMesh_i3l2k")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." groups=["Trap"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" groups=["Trap"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -0.00576782, 0, 0)
+shape = SubResource("BoxShape3D_q1aaw")

@@ -509,7 +509,6 @@ jump_strength = 8
 transform = Transform3D(-0.0854159, -0.294963, 0.951682, -0.00498856, 0.955288, 0.295633, -0.996333, 0.0205044, -0.0830682, -7.77146, 4.53798, -27.6923)
 script = ExtResource("3_15cd5")
 target = NodePath("../Player")
-camera_mode = 1
 zoom_maximum = 2
 mouse_sensitivity = 0.1
 low_view_bound = 25

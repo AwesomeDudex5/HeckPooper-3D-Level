@@ -157,7 +157,8 @@ func collect_coin():
 
 func death():
 	#get_tree().reload_current_scene()
-	#translate(current_spawn_point)
+	#translate(current_spawn_point)\
+	#print("Deading")
 	self.position = current_spawn_point
 
 func _on_area_3d_body_entered(body):
@@ -168,4 +169,4 @@ func _on_area_3d_body_entered(body):
 func _on_area_3d_area_entered(area):
 	#print(area.name)
 	if(area.is_in_group("Checkpoint")):
-		current_spawn_point = area.get_parent().position
+		current_spawn_point = area.get_parent().global_position

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bqqgyqafm7xwp"]
+[gd_scene load_steps=20 format=3 uid="uid://bqqgyqafm7xwp"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_ahusb"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_onms2"]
@@ -15,6 +15,10 @@
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="14_my8yp"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="15_mippt"]
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="17_tk810"]
+
+[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_ak5v8"]
+margin = 0.674
+length = 0.25
 
 [sub_resource type="LabelSettings" id="LabelSettings_38ys3"]
 font = ExtResource("17_tk810")
@@ -76,16 +80,26 @@ face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 environment = ExtResource("1_ahusb")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_onms2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.93784, 2.5, 0)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.20526, 1.1274, -0.227907)
 view = NodePath("../View")
+jump_strength = 8
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target")]
-transform = Transform3D(0.707107, -0.298836, 0.640856, 0, 0.906308, 0.422618, -0.707107, -0.298836, 0.640856, 0, 0, 0)
+transform = Transform3D(-0.0854159, -0.294963, 0.951682, -0.00498856, 0.955288, 0.295633, -0.996333, 0.0205044, -0.0830682, 335.229, 95.538, -316.692)
 script = ExtResource("5_bg0fr")
 target = NodePath("../Player")
+zoom_maximum = 2
+mouse_sensitivity = 0.1
+low_view_bound = 25
 
-[node name="Camera" type="Camera3D" parent="View"]
-transform = Transform3D(1, 0, 0, 0, 1, -3.57628e-07, 0, 0, 1, 0, 9.53674e-07, 10)
+[node name="PitchPivot" type="SpringArm3D" parent="View"]
+transform = Transform3D(1, 0, -2.23517e-08, 3.72529e-09, 1, 1.29337e-07, 1.49012e-08, 2.51457e-08, 1, 0, 0.5, 0)
+shape = SubResource("SeparationRayShape3D_ak5v8")
+spring_length = 2.0
+margin = 0.25
+
+[node name="Camera" type="Camera3D" parent="View/PitchPivot"]
+transform = Transform3D(1, 1.86265e-09, 1.66534e-16, -1.86265e-09, 1, -2.98023e-08, -2.22044e-16, 2.98023e-08, 1, 0, -9.53674e-07, 2)
 current = true
 fov = 40.0
 
@@ -213,6 +227,21 @@ offset_bottom = 123.0
 text = "0"
 label_settings = SubResource("LabelSettings_38ys3")
 
+[node name="Pause Screen" type="CanvasLayer" parent="HUD"]
+
+[node name="Pause Text" type="Label" parent="HUD/Pause Screen"]
+offset_left = 487.0
+offset_top = 307.0
+offset_right = 925.0
+offset_bottom = 490.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 30
+theme_override_font_sizes/font_size = 45
+text = "PAUSED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Blocks" type="Node3D" parent="."]
 
 [node name="block0" type="Node3D" parent="."]
@@ -224,5 +253,3 @@ block_data = SubResource("Resource_xt6c5")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1)
 script = ExtResource("14_my8yp")
 block_data = SubResource("Resource_pw6o3")
-
-[connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]

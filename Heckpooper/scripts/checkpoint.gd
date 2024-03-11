@@ -1,6 +1,6 @@
 extends Node3D
 
-@onready var audio_player = $AudioStreamPlayer3D
+@onready var audio_player = $"../AudioStreamPlayer3D"
 var checkpoint_reached : bool = false
 
 

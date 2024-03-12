@@ -1,4 +1,4 @@
-[gd_scene load_steps=734 format=3 uid="uid://bswi03b2842ct"]
+[gd_scene load_steps=736 format=3 uid="uid://bswi03b2842ct"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_q0wml"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_n6hmu"]
@@ -13,6 +13,11 @@
 [ext_resource type="PackedScene" uid="uid://dfpisimsgf5ce" path="res://objects/coin.tscn" id="11_q7sy3"]
 [ext_resource type="PackedScene" uid="uid://dtjvjdjl8cs6e" path="res://models/flag.glb" id="12_dxvq3"]
 [ext_resource type="Script" path="res://scripts/CheckpointPlacer.gd" id="13_14ysj"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_bpoe2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qpj2l"]
+size = Vector3(2, 1, 2)
 
 [sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_piwoq"]
 margin = 0.674
@@ -3056,6 +3061,11 @@ face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7deav"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wdnfq"]
+size = Vector3(2, 1, 2)
 
 [sub_resource type="Resource" id="Resource_iilv8"]
 script = ExtResource("8_5rbnc")
@@ -16939,11 +16949,6 @@ face_selected = PackedByteArray(0, 0, 1, 1, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7)
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_7deav"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_wdnfq"]
-size = Vector3(2, 1, 2)
-
 [node name="Main" type="Node3D"]
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
@@ -16955,9 +16960,18 @@ shadow_opacity = 0.75
 environment = ExtResource("1_q0wml")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_n6hmu")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 254.213, 74.1274, -307.055)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 257.881, 75.3777, -307.908)
 view = NodePath("../View")
 jump_strength = 8
+
+[node name="Death PLane" type="MeshInstance3D" parent="Player" groups=["Trap"]]
+transform = Transform3D(-49.4663, 0, 0, 0, 1, 0, 0, 0, 52.6042, 13.8692, 243.641, -15.0961)
+mesh = SubResource("PlaneMesh_bpoe2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Player/Death PLane" groups=["Trap"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player/Death PLane/StaticBody3D" groups=["Trap"]]
+shape = SubResource("BoxShape3D_qpj2l")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target")]
 transform = Transform3D(-0.0854159, -0.294963, 0.951682, -0.00498856, 0.955288, 0.295633, -0.996333, 0.0205044, -0.0830682, 335.229, 95.538, -316.692)
@@ -17772,6 +17786,15 @@ transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_gesyx")
 skeleton = NodePath("")
 
+[node name="Checkpoint2" parent="Blocks/ApproachObjects/Tents" instance=ExtResource("10_p0mbo")]
+transform = Transform3D(3.07704, 0, 0, 0, 1.96704, 0, 0, 0, 1.82482, -153.906, 137.493, -484.993)
+
+[node name="Checkpoint3" parent="Blocks/ApproachObjects/Tents" instance=ExtResource("10_p0mbo")]
+transform = Transform3D(3.07704, 0, 0, 0, 1.96704, 0, 0, 0, 1.82482, -272.324, 196.162, -479.079)
+
+[node name="Checkpoint4" parent="Blocks/ApproachObjects/Tents" instance=ExtResource("10_p0mbo")]
+transform = Transform3D(3.07704, 0, 0, 0, 1.96704, 0, 0, 0, 1.82482, -320.798, 218.996, -409.54)
+
 [node name="Checkpoint" parent="Blocks/ApproachObjects/Tents" instance=ExtResource("10_p0mbo")]
 transform = Transform3D(1.75415, 0, 0, 0, 2.94193, 0, 0, 0, 1.35086, -81.5454, 73.9234, -587.867)
 
@@ -18177,6 +18200,15 @@ block_data = SubResource("Resource_4mr5f")
 transform = Transform3D(-2.08616e-07, 0, 1, 0, 1, 0, -1, 0, -2.08616e-07, 88.6123, 16, -74.9492)
 script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_e8uau")
+
+[node name="Death PLane" type="MeshInstance3D" parent="Blocks/Trunk/Entrance Hall" groups=["Trap"]]
+transform = Transform3D(-158.334, 0, 1.33514e-05, 0, 3.20084, 0, 1.14441e-05, 0, 168.378, -28.9539, -4.86475, 65.972)
+mesh = SubResource("PlaneMesh_bpoe2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Blocks/Trunk/Entrance Hall/Death PLane" groups=["Trap"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/Trunk/Entrance Hall/Death PLane/StaticBody3D" groups=["Trap"]]
+shape = SubResource("BoxShape3D_qpj2l")
 
 [node name="Ribcage" type="Node3D" parent="Blocks/Trunk"]
 transform = Transform3D(-0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, -0.965926, 35, 18, -267)
@@ -18791,6 +18823,16 @@ block_data = SubResource("Resource_cspla")
 transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 8.20789, 11, -31.1871)
 script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_btca5")
+
+[node name="Death PLane4" type="MeshInstance3D" parent="Blocks/Trunk/Ribcage" groups=["Trap"]]
+transform = Transform3D(-18.777, 0, -0.456192, 0, 1.05539, 0, 0.519884, 0, -16.4766, 16.1803, 2.1308, -15.477)
+mesh = SubResource("PlaneMesh_7deav")
+skeleton = NodePath("../../../Canopy Level/Death PLane")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Blocks/Trunk/Ribcage/Death PLane4" groups=["Trap"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/Trunk/Ribcage/Death PLane4/StaticBody3D" groups=["Trap"]]
+shape = SubResource("BoxShape3D_wdnfq")
 
 [node name="Stairway To Heaven" type="Node3D" parent="Blocks/Trunk"]
 transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 57, 36, -302)
@@ -21948,6 +21990,26 @@ block_data = SubResource("Resource_gv7dr")
 transform = Transform3D(0.0464016, 0, -0.325135, -0.140462, 0.936834, -0.020046, 0.321469, 0.0491806, 0.0458784, 31.1463, 357.081, -43.367)
 script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_3hssd")
+
+[node name="Death PLane3" type="MeshInstance3D" parent="Blocks/Canopy Level" groups=["Trap"]]
+transform = Transform3D(20.5495, 0, -1.35899e-05, 0, 0.999998, 0, 3.21865e-06, 0, 32.9279, -2.30334, 288.29, -21.93)
+mesh = SubResource("PlaneMesh_7deav")
+skeleton = NodePath("../Death PLane")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Blocks/Canopy Level/Death PLane3" groups=["Trap"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/Canopy Level/Death PLane3/StaticBody3D" groups=["Trap"]]
+shape = SubResource("BoxShape3D_wdnfq")
+
+[node name="Death PLane2" type="MeshInstance3D" parent="Blocks/Canopy Level" groups=["Trap"]]
+transform = Transform3D(13.3096, 0, -1.37091e-06, 0, 0.999999, 0, 1.3113e-06, 0, 9.98295, 20.8146, 291.169, -11.3336)
+mesh = SubResource("PlaneMesh_7deav")
+skeleton = NodePath("../Death PLane")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Blocks/Canopy Level/Death PLane2" groups=["Trap"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/Canopy Level/Death PLane2/StaticBody3D" groups=["Trap"]]
+shape = SubResource("BoxShape3D_wdnfq")
 
 [node name="Death PLane" type="MeshInstance3D" parent="Blocks/Canopy Level" groups=["Trap"]]
 transform = Transform3D(-49.4663, 0, 0, 0, 1, 0, 0, 0, 52.6042, 13.8692, 243.641, -15.0961)

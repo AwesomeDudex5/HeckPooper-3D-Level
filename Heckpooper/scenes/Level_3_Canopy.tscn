@@ -5039,7 +5039,6 @@ mesh = SubResource("PlaneMesh_284aq")
 [node name="StaticBody3D" type="StaticBody3D" parent="Canopy Level/Death PLane" groups=["Trap"]]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Canopy Level/Death PLane/StaticBody3D" groups=["Trap"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_44iin")
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]

@@ -106,7 +106,12 @@ func start_block_drag(viewport_camera:Camera3D, event:InputEvent):
 		
 	else:
 		#print("Miss")
-		var hit_result = calc_hit_point_empty_space(origin, dir, viewport_camera)
+		var draw_plane_point:Vector3 = Vector3.ZERO
+		var draw_plane_normal:Vector3 = Vector3.UP
+		if settings.match_selected_block:
+			draw_plane_point = calc_empty_space_draw_plane_origin(viewport_camera, draw_plane_point, draw_plane_normal)
+			
+		var hit_result = calc_hit_point_empty_space(origin, dir, viewport_camera, draw_plane_point, draw_plane_normal)
 		block_drag_p0 = hit_result[0]
 		drag_floor_normal = hit_result[1]
 		
@@ -145,6 +150,9 @@ func create_block():
 #						command.origin = block_drag_p0
 		command.uv_transform = builder.tool_uv_transform
 		command.material_path = builder.tool_material_path
+		command.collision_type = settings.collision_type
+		command.collision_layers = settings.collision_layer
+		command.collision_mask = settings.collision_mask
 
 		var undo:EditorUndoRedoManager = builder.get_undo_redo()
 
@@ -208,8 +216,13 @@ func _gui_input(viewport_camera:Camera3D, event:InputEvent)->bool:
 					var angle_with_base:float = acos(drag_floor_normal.dot(camera_dir))
 
 					var drag_angle_limit:float = builder.get_global_scene().drag_angle_limit
+
 					if angle_with_base < drag_angle_limit || angle_with_base > PI - drag_angle_limit:
-						block_drag_cur = block_drag_p1 + drag_floor_normal * settings.default_block_height
+						var height = settings.default_block_height
+						if settings.match_selected_block:
+							height = calc_active_block_orthogonal_height(block_drag_p0, drag_floor_normal)
+							
+						block_drag_cur = block_drag_p1 + drag_floor_normal * height
 						
 						create_block()
 						
@@ -233,11 +246,11 @@ func _gui_input(viewport_camera:Camera3D, event:InputEvent)->bool:
 				
 			return true
 		
-		elif e.button_index == MOUSE_BUTTON_RIGHT:
-			if tool_state == ToolState.BLOCK_BASE || tool_state == ToolState.BLOCK_HEIGHT:
-				if e.is_pressed():
-					tool_state = ToolState.NONE
-				return true
+		#elif e.button_index == MOUSE_BUTTON_RIGHT:
+			#if tool_state == ToolState.BLOCK_BASE || tool_state == ToolState.BLOCK_HEIGHT:
+				#if e.is_pressed():
+					#tool_state = ToolState.NONE
+				#return true
 			
 			
 	elif event is InputEventMouseMotion:

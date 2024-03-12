@@ -3923,13 +3923,13 @@ target = NodePath("../Player")
 camera_mode = 1
 zoom_maximum = 2
 mouse_sensitivity = 0.1
-low_view_bound = 25
+low_view_bound = 20
 
 [node name="PitchPivot" type="SpringArm3D" parent="View"]
 transform = Transform3D(1, 0, -2.23517e-08, 3.72529e-09, 1, 1.29337e-07, 1.49012e-08, 2.51457e-08, 1, 0, 0.5, 0)
 shape = SubResource("SeparationRayShape3D_piwoq")
 spring_length = 2.0
-margin = 0.25
+margin = 0.5
 
 [node name="Camera" type="Camera3D" parent="View/PitchPivot"]
 transform = Transform3D(1, 1.86265e-09, 1.66534e-16, -1.86265e-09, 1, -2.98023e-08, -2.22044e-16, 2.98023e-08, 1, 0, -9.53674e-07, 2)

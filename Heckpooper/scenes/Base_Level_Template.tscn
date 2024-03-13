@@ -119,6 +119,30 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_yxt8e")
 
+[sub_resource type="Resource" id="Resource_5p6tr"]
+script = ExtResource("8_5rbnc")
+selected = false
+active = false
+collsion = true
+physics_layer = 1
+physics_mask = 1
+vertex_points = PackedVector3Array(0, 10, 0, 0, 10, 42, 0, 0, 42, 0, 0, 0, 27, 10, 0, 27, 10, 42, 27, 0, 42, 27, 0, 0)
+vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+active_vertex = -1
+edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
+edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+active_edge = -1
+edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
+face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
+face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
+face_material_indices = PackedInt32Array(-1, -1, -1, -1, -1, -1)
+face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
+face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
+face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
+active_face = -1
+face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ulq3n"]
 resource_name = "rods"
 albedo_color = Color(0.828131, 0.828131, 0.828131, 1)
@@ -200,30 +224,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_hgc6b")
-
-[sub_resource type="Resource" id="Resource_5p6tr"]
-script = ExtResource("8_5rbnc")
-selected = false
-active = false
-collsion = true
-physics_layer = 1
-physics_mask = 1
-vertex_points = PackedVector3Array(0, 10, 0, 0, 10, 42, 0, 0, 42, 0, 0, 0, 27, 10, 0, 27, 10, 42, 27, 0, 42, 27, 0, 0)
-vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
-active_vertex = -1
-edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
-edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-active_edge = -1
-edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
-face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
-face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
-face_material_indices = PackedInt32Array(-1, -1, -1, -1, -1, -1)
-face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
-face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
-face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
-active_face = -1
-face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
 [sub_resource type="Resource" id="Resource_fqrnn"]
 script = ExtResource("8_5rbnc")
@@ -16945,7 +16945,6 @@ face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ja1o"]
 resource_name = "Ap_2"
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.4
 roughness = 0.492366
 
@@ -17085,7 +17084,7 @@ block_data = SubResource("Resource_orfja")
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -150, 90, -500)
 
 [node name="CollisionShape3DN" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 0)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2/CollisionShape3DN"]
@@ -17095,7 +17094,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN4" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 90)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 90)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2/CollisionShape3DN4"]
@@ -17105,7 +17104,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN5" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 120)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 120)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2/CollisionShape3DN5"]
@@ -17115,7 +17114,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN6" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 150)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 150)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2/CollisionShape3DN6"]
@@ -17125,7 +17124,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN7" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 180)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 180)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2/CollisionShape3DN7"]
@@ -17135,7 +17134,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN8" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -30)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -30)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2/CollisionShape3DN8"]
@@ -17145,7 +17144,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN9" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -60)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -60)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2/CollisionShape3DN9"]
@@ -17155,7 +17154,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN10" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -90)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -90)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2/CollisionShape3DN10"]
@@ -17165,7 +17164,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN11" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -120)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -120)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2/CollisionShape3DN11"]
@@ -17175,7 +17174,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN12" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -150)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -150)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2/CollisionShape3DN12"]
@@ -17185,7 +17184,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN13" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -180)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -180)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2/CollisionShape3DN13"]
@@ -17195,7 +17194,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN14" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 210)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 210)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/WestWall/StaticBody3D2/CollisionShape3DN14"]
@@ -17210,7 +17209,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 90, -300)
 
 [node name="CollisionShape3DN" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 0)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D/CollisionShape3DN"]
@@ -17220,7 +17219,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN2" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 30)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 30)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D/CollisionShape3DN2"]
@@ -17230,7 +17229,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN3" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 60)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 60)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D/CollisionShape3DN3"]
@@ -17240,7 +17239,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN4" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 90)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 90)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D/CollisionShape3DN4"]
@@ -17250,7 +17249,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN5" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 120)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 120)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D/CollisionShape3DN5"]
@@ -17260,7 +17259,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN6" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 150)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 150)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D/CollisionShape3DN6"]
@@ -17270,7 +17269,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN7" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 180)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 180)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D/CollisionShape3DN7"]
@@ -17280,7 +17279,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN8" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -30)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -30)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D/CollisionShape3DN8"]
@@ -17290,7 +17289,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN9" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -60)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -60)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D/CollisionShape3DN9"]
@@ -17300,7 +17299,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN10" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -90)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -90)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D/CollisionShape3DN10"]
@@ -17310,7 +17309,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN11" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -120)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -120)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D/CollisionShape3DN11"]
@@ -17320,7 +17319,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN12" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -150)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -150)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D/CollisionShape3DN12"]
@@ -17330,7 +17329,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN13" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -180)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -180)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/NorthWall/StaticBody3D/CollisionShape3DN13"]
@@ -17345,7 +17344,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -120, 90, -100)
 
 [node name="CollisionShape3DN" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 0)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN"]
@@ -17355,7 +17354,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN2" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 30)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 30)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN2"]
@@ -17365,7 +17364,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN3" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 60)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 60)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN3"]
@@ -17375,7 +17374,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN4" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 90)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 90)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN4"]
@@ -17385,7 +17384,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN5" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 120)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 120)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN5"]
@@ -17395,7 +17394,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN6" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 150)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 150)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN6"]
@@ -17405,7 +17404,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN7" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 180)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 180)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN7"]
@@ -17415,7 +17414,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN8" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -30)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -30)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN8"]
@@ -17425,7 +17424,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN9" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -60)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -60)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN9"]
@@ -17435,7 +17434,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN10" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -90)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -90)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN10"]
@@ -17445,7 +17444,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN11" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -120)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -120)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN11"]
@@ -17455,7 +17454,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN12" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -150)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -150)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN12"]
@@ -17465,7 +17464,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN13" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -180)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -180)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN13"]
@@ -17475,7 +17474,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN14" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 210)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 210)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/EastWall/StaticBody3D2/CollisionShape3DN14"]
@@ -17490,7 +17489,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -350, 90, -300)
 
 [node name="CollisionShape3DN" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 0)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2/CollisionShape3DN"]
@@ -17500,7 +17499,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN2" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 450, -500, -2.18557e-05, 779.423, 5.85622e-06, -1000, -1.96701e-05, 0, 0, 30)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 30)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2/CollisionShape3DN2"]
@@ -17510,7 +17509,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN3" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 375, -500, -2.18557e-05, 649.519, 5.85622e-06, -1000, -1.63918e-05, 0, 0, 60)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 60)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2/CollisionShape3DN3"]
@@ -17530,7 +17529,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN5" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 375, -500, -2.18557e-05, 649.519, 5.85622e-06, -1000, -1.63918e-05, 0, 0, 120)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 120)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2/CollisionShape3DN5"]
@@ -17540,7 +17539,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN6" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 450, -500, -2.18557e-05, 779.423, 5.85622e-06, -1000, -1.96701e-05, 0, 0, 150)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 150)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2/CollisionShape3DN6"]
@@ -17550,7 +17549,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN7" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, 180)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, 180)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2/CollisionShape3DN7"]
@@ -17560,7 +17559,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN8" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -30)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -30)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2/CollisionShape3DN8"]
@@ -17570,7 +17569,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN9" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -60)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -60)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2/CollisionShape3DN9"]
@@ -17580,7 +17579,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN10" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -90)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -90)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2/CollisionShape3DN10"]
@@ -17590,7 +17589,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN11" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -120)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -120)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2/CollisionShape3DN11"]
@@ -17600,7 +17599,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN12" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -150)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -150)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2/CollisionShape3DN12"]
@@ -17610,7 +17609,7 @@ skeleton = NodePath("../../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4qob")
 
 [node name="CollisionShape3DN13" type="CollisionShape3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2"]
-transform = Transform3D(866.025, -5.85622e-06, 500, -500, -2.18557e-05, 866.025, 5.85622e-06, -1000, -2.18557e-05, 0, 0, -180)
+transform = Transform3D(866.025, -5.85622e-06, 300, -500, -2.18557e-05, 519.615, 5.85622e-06, -1000, -1.31134e-05, 0, 0, -180)
 shape = SubResource("ConvexPolygonShape3D_cbs6x")
 
 [node name="Throwable" type="MeshInstance3D" parent="Blocks/ApproachObjects/KnifeWall/SouthWall/StaticBody3D2/CollisionShape3DN13"]
@@ -17761,173 +17760,6 @@ skeleton = NodePath("")
 [node name="StaticBody3D2" type="StaticBody3D" parent="Blocks/ApproachObjects/Fruit"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -55.3268, 0, -880.408)
 
-[node name="Tents" type="Node" parent="Blocks/ApproachObjects"]
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Blocks/ApproachObjects/Tents"]
-transform = Transform3D(-0.542178, 0, 0.840264, 0, 1, 0, -0.840264, 0, -0.542178, 122.276, 74, -321.887)
-
-[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D"]
-transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
-mesh = SubResource("ArrayMesh_3nhr2")
-skeleton = NodePath("")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D"]
-transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_38a58")
-
-[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D/CollisionShape3D"]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
-mesh = SubResource("ArrayMesh_gesyx")
-skeleton = NodePath("")
-
-[node name="StaticBody3D2" type="StaticBody3D" parent="Blocks/ApproachObjects/Tents"]
-transform = Transform3D(0.707218, 0, 0.706996, 0, 1, 0, -0.706996, 0, 0.707218, 113.923, 74, -408.351)
-
-[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D2"]
-transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
-mesh = SubResource("ArrayMesh_3nhr2")
-skeleton = NodePath("")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D2"]
-transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_38a58")
-
-[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D2/CollisionShape3D"]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
-mesh = SubResource("ArrayMesh_gesyx")
-skeleton = NodePath("")
-
-[node name="StaticBody3D3" type="StaticBody3D" parent="Blocks/ApproachObjects/Tents"]
-transform = Transform3D(0.0673013, 0, 0.997733, 0, 1, 0, -0.997733, 0, 0.0673013, 95.5296, 74, -530.361)
-
-[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D3"]
-transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
-mesh = SubResource("ArrayMesh_3nhr2")
-skeleton = NodePath("")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D3"]
-transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_38a58")
-
-[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D3/CollisionShape3D"]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
-mesh = SubResource("ArrayMesh_gesyx")
-skeleton = NodePath("")
-
-[node name="Checkpoint2" parent="Blocks/ApproachObjects/Tents" instance=ExtResource("10_p0mbo")]
-transform = Transform3D(3.07704, 0, 0, 0, 1.96704, 0, 0, 0, 1.82482, -153.906, 137.493, -484.993)
-
-[node name="Checkpoint3" parent="Blocks/ApproachObjects/Tents" instance=ExtResource("10_p0mbo")]
-transform = Transform3D(3.07704, 0, 0, 0, 1.96704, 0, 0, 0, 1.82482, -272.324, 196.162, -479.079)
-
-[node name="Checkpoint4" parent="Blocks/ApproachObjects/Tents" instance=ExtResource("10_p0mbo")]
-transform = Transform3D(3.07704, 0, 0, 0, 1.96704, 0, 0, 0, 1.82482, -320.798, 218.996, -409.54)
-
-[node name="Checkpoint" parent="Blocks/ApproachObjects/Tents" instance=ExtResource("10_p0mbo")]
-transform = Transform3D(1.75415, 0, 0, 0, 2.94193, 0, 0, 0, 1.35086, -81.5454, 73.9234, -587.867)
-
-[node name="StaticBody3D4" type="StaticBody3D" parent="Blocks/ApproachObjects/Tents"]
-transform = Transform3D(-0.797068, 0, -0.60389, 0, 1, 0, 0.60389, 0, -0.797068, 38.7935, 74, -554.459)
-
-[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D4"]
-transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
-mesh = SubResource("ArrayMesh_3nhr2")
-skeleton = NodePath("")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D4"]
-transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_38a58")
-
-[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D4/CollisionShape3D"]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
-mesh = SubResource("ArrayMesh_gesyx")
-skeleton = NodePath("")
-
-[node name="StaticBody3D5" type="StaticBody3D" parent="Blocks/ApproachObjects/Tents"]
-transform = Transform3D(0.0673013, 0, 0.997733, 0, 1, 0, -0.997733, 0, 0.0673013, -85.0463, 74, -589.409)
-
-[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D5"]
-transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
-mesh = SubResource("ArrayMesh_3nhr2")
-skeleton = NodePath("")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D5"]
-transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_38a58")
-
-[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D5/CollisionShape3D"]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
-mesh = SubResource("ArrayMesh_gesyx")
-skeleton = NodePath("")
-
-[node name="StaticBody3D6" type="StaticBody3D" parent="Blocks/ApproachObjects/Tents"]
-transform = Transform3D(-0.67939, 0, 0.733777, 0, 1, 0, -0.733777, 0, -0.67939, 268.511, 74, -296.538)
-
-[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D6"]
-transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
-mesh = SubResource("ArrayMesh_3nhr2")
-skeleton = NodePath("")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D6"]
-transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_38a58")
-
-[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D6/CollisionShape3D"]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
-mesh = SubResource("ArrayMesh_gesyx")
-skeleton = NodePath("")
-
-[node name="StaticBody3D7" type="StaticBody3D" parent="Blocks/ApproachObjects/Tents"]
-transform = Transform3D(0.982427, 0, -0.186644, 0, 1, 0, 0.186644, 0, 0.982427, 270.987, 74, -314.448)
-
-[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D7"]
-transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
-mesh = SubResource("ArrayMesh_3nhr2")
-skeleton = NodePath("")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D7"]
-transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_38a58")
-
-[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D7/CollisionShape3D"]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
-mesh = SubResource("ArrayMesh_gesyx")
-skeleton = NodePath("")
-
-[node name="StaticBody3D8" type="StaticBody3D" parent="Blocks/ApproachObjects/Tents"]
-transform = Transform3D(-0.67939, 0, 0.733777, 0, 1, 0, -0.733777, 0, -0.67939, 280.928, 74, -303.05)
-
-[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D8"]
-transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
-mesh = SubResource("ArrayMesh_3nhr2")
-skeleton = NodePath("")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D8"]
-transform = Transform3D(-1.39087e-05, 0, 9.9028e-05, 0, 0.0001, 0, -9.9028e-05, 0, -1.39087e-05, -2.22801, 0, -1.2406)
-shape = SubResource("ConvexPolygonShape3D_38a58")
-
-[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D8/CollisionShape3D"]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
-mesh = SubResource("ArrayMesh_gesyx")
-skeleton = NodePath("")
-
-[node name="StaticBody3D9" type="StaticBody3D" parent="Blocks/ApproachObjects/Tents"]
-transform = Transform3D(-0.916218, 0.181206, 0.357366, 0.168819, 0.983445, -0.0658468, -0.363381, 0, -0.931641, -111.887, 115.935, -539.107)
-
-[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D9"]
-transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
-mesh = SubResource("ArrayMesh_3nhr2")
-skeleton = NodePath("")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D9"]
-transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_38a58")
-
-[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tents/StaticBody3D9/CollisionShape3D"]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
-mesh = SubResource("ArrayMesh_gesyx")
-skeleton = NodePath("")
-
 [node name="Root" type="Node3D" parent="Blocks/ApproachObjects"]
 
 [node name="Root1" type="Node3D" parent="Blocks/ApproachObjects/Root" groups=["Tree"]]
@@ -17946,12 +17778,12 @@ script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_t6ekd")
 
 [node name="Root4" type="Node3D" parent="Blocks/ApproachObjects/Root" groups=["Tree"]]
-transform = Transform3D(11.4907, -21.1408, -3.73739, 0, 11.9707, -15.9748, 9.64181, 25.1946, 4.45404, -115, 77, -595)
+transform = Transform3D(5.13031, 30.9058, 5.4637, 0, 11.9707, -15.9748, -14.0954, 11.2488, 1.98863, -160, 77, -590)
 script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_t6ekd")
 
 [node name="Root5" type="Node3D" parent="Blocks/ApproachObjects/Root" groups=["Tree"]]
-transform = Transform3D(2.58819, -41.8258, -4.82963, 0, 25, -8.66025, 9.65926, 11.2072, 1.2941, -76, 61, -605)
+transform = Transform3D(2.58819, 43.7713, -4.08218, 0, 21.1309, 9.06308, 9.65926, -11.7285, 1.09382, -200, 65, -580)
 script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_t6ekd")
 
@@ -18004,7 +17836,7 @@ script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_orfja")
 
 [node name="Block_1" type="Node3D" parent="Blocks/ApproachObjects/Burrow2" groups=["Ground"]]
-transform = Transform3D(0.01, 0, 0, 0, 0.15, 0, 0, 0, 1, 260, 81, -1300)
+transform = Transform3D(0.01, 0, 0, 0, 0.15, 0, 0, 0, 1, 260, 81.5, -1300)
 script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_orfja")
 
@@ -18022,6 +17854,147 @@ block_data = SubResource("Resource_5p6tr")
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 183, 70, -500)
 script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_orfja")
+
+[node name="Tent" type="Node3D" parent="Blocks/ApproachObjects"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Blocks/ApproachObjects/Tent"]
+transform = Transform3D(-0.610242, 0, -0.792216, 0, 1, 0, 0.792216, 0, -0.610242, -408.1, 74, -394.51)
+
+[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D"]
+transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
+mesh = SubResource("ArrayMesh_3nhr2")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D"]
+transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_38a58")
+
+[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D/CollisionShape3D"]
+transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_gesyx")
+skeleton = NodePath("")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="Blocks/ApproachObjects/Tent"]
+transform = Transform3D(-0.902976, 0, 0.429692, 0, 1, 0, -0.429692, 0, -0.902976, -400.489, 74, -465.246)
+
+[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D2"]
+transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
+mesh = SubResource("ArrayMesh_3nhr2")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D2"]
+transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_38a58")
+
+[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D2/CollisionShape3D"]
+transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_gesyx")
+skeleton = NodePath("")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="Blocks/ApproachObjects/Tent"]
+transform = Transform3D(-0.962683, 0, -0.270634, 0, 1, 0, 0.270634, 0, -0.962683, -336.117, 74, -546.119)
+
+[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D3"]
+transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
+mesh = SubResource("ArrayMesh_3nhr2")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D3"]
+transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_38a58")
+
+[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D3/CollisionShape3D"]
+transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_gesyx")
+skeleton = NodePath("")
+
+[node name="Checkpoint" parent="Blocks/ApproachObjects/Tent" instance=ExtResource("10_p0mbo")]
+transform = Transform3D(-1.66192, 0, -0.432255, 0, 2.94193, 0, 0.561301, 0, -1.27984, -198.33, 73.9234, -570.45)
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="Blocks/ApproachObjects/Tent"]
+transform = Transform3D(0.835903, 0, -0.548877, 0, 1, 0, 0.548877, 0, 0.835903, -257.957, 74, -553.035)
+
+[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D4"]
+transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
+mesh = SubResource("ArrayMesh_3nhr2")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D4"]
+transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_38a58")
+
+[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D4/CollisionShape3D"]
+transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_gesyx")
+skeleton = NodePath("")
+
+[node name="StaticBody3D5" type="StaticBody3D" parent="Blocks/ApproachObjects/Tent"]
+transform = Transform3D(0.255497, 0, -0.96681, 0, 1, 0, 0.96681, 0, 0.255497, -194.52, 74, -570.109)
+
+[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D5"]
+transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
+mesh = SubResource("ArrayMesh_3nhr2")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D5"]
+transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_38a58")
+
+[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D5/CollisionShape3D"]
+transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_gesyx")
+skeleton = NodePath("")
+
+[node name="StaticBody3D6" type="StaticBody3D" parent="Blocks/ApproachObjects/Tent"]
+transform = Transform3D(-0.67939, 0, 0.733777, 0, 1, 0, -0.733777, 0, -0.67939, -504.747, 56.6924, -385.189)
+
+[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D6"]
+transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
+mesh = SubResource("ArrayMesh_3nhr2")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D6"]
+transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_38a58")
+
+[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D6/CollisionShape3D"]
+transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_gesyx")
+skeleton = NodePath("")
+
+[node name="StaticBody3D7" type="StaticBody3D" parent="Blocks/ApproachObjects/Tent"]
+transform = Transform3D(0.982427, 0, -0.186644, 0, 1, 0, 0.186644, 0, 0.982427, -502.271, 56.6924, -403.099)
+
+[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D7"]
+transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
+mesh = SubResource("ArrayMesh_3nhr2")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D7"]
+transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_38a58")
+
+[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D7/CollisionShape3D"]
+transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_gesyx")
+skeleton = NodePath("")
+
+[node name="StaticBody3D8" type="StaticBody3D" parent="Blocks/ApproachObjects/Tent"]
+transform = Transform3D(-0.67939, 0, 0.733777, 0, 1, 0, -0.733777, 0, -0.67939, -492.33, 56.6924, -391.701)
+
+[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D8"]
+transform = Transform3D(0.992546, 0.121869, -5.32708e-09, 0, -4.37114e-08, -1, -0.121869, 0.992546, -4.33856e-08, -2.18335, 0, -1.24359)
+mesh = SubResource("ArrayMesh_3nhr2")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D8"]
+transform = Transform3D(-1.39087e-05, 0, 9.9028e-05, 0, 0.0001, 0, -9.9028e-05, 0, -1.39087e-05, -2.22801, 0, -1.2406)
+shape = SubResource("ConvexPolygonShape3D_38a58")
+
+[node name="Tent_low" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D8/CollisionShape3D"]
+transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_gesyx")
+skeleton = NodePath("")
 
 [node name="Trunk" type="Node3D" parent="Blocks"]
 transform = Transform3D(-0.400893, 0, 0.916125, 0, 1, 0, -0.916125, 0, -0.400893, 50.6977, 118.189, -587.164)
@@ -21008,8 +20981,34 @@ transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 11.4301, 1
 script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_gxgq8")
 
+[node name="Checkpoint2" parent="Blocks/Trunk" instance=ExtResource("10_p0mbo")]
+transform = Transform3D(-1.23356, 0, -1.67176, 0, 1.96704, 0, 2.81895, 0, -0.731557, -11.5772, 19.304, -228.402)
+
+[node name="Checkpoint3" parent="Blocks/Trunk" instance=ExtResource("10_p0mbo")]
+transform = Transform3D(-1.23356, 0, -1.67176, 0, 1.96704, 0, 2.81895, 0, -0.731557, 30.4778, 77.973, -339.259)
+
+[node name="Checkpoint4" parent="Blocks/Trunk" instance=ExtResource("10_p0mbo")]
+transform = Transform3D(-1.23356, 0, -1.67176, 0, 1.96704, 0, 2.81895, 0, -0.731557, -13.7957, 100.807, -411.545)
+
+[node name="StaticBody3D9" type="StaticBody3D" parent="Blocks/Trunk"]
+transform = Transform3D(0.700208, -0.0726442, 0.710234, 0.168819, 0.983445, -0.0658468, -0.693693, 0.166007, 0.70088, 21.1528, -2.25401, -168.214)
+
+[node name="Tent_rods" type="MeshInstance3D" parent="Blocks/Trunk/StaticBody3D9"]
+transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
+mesh = SubResource("ArrayMesh_3nhr2")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/Trunk/StaticBody3D9"]
+transform = Transform3D(0.0001, 0, 0, 0, 0.0001, 0, 0, 0, 0.0001, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_38a58")
+
+[node name="Tent_low" type="MeshInstance3D" parent="Blocks/Trunk/StaticBody3D9/CollisionShape3D"]
+transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_gesyx")
+skeleton = NodePath("")
+
 [node name="Canopy Level" type="Node3D" parent="Blocks"]
-transform = Transform3D(0.253723, 0, 3.0342, 0, 1.05539, 0, -3.0342, 0, 0.253723, -171.715, -72.7191, -281.782)
+transform = Transform3D(-2.88714, 0, 0.967704, 0, 1.053, 0, -0.967704, 0, -2.88714, -111.693, -71.3, -408.992)
 
 [node name="Checkpoint Placer" type="Node3D" parent="Blocks/Canopy Level"]
 transform = Transform3D(1, 0, 0, 0, 2.58587, 0, 0, 0, 0.991017, 40.4068, 297.641, -18.3949)
@@ -21998,7 +21997,7 @@ script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_w8uni")
 
 [node name="Branch12" type="Node3D" parent="Blocks/Canopy Level"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.51453, -3.05176e-05, 0.568432)
+transform = Transform3D(0.965926, 0, -0.258819, 0, 0.999999, 0, 0.258819, 0, 0.965926, 4.28809, -1.89937, 1.79673)
 
 [node name="Block_0" type="Node3D" parent="Blocks/Canopy Level/Branch12"]
 transform = Transform3D(0.324158, 0, -0.0528023, -0.035161, 0.921932, -0.215856, 0.0513765, 0.0758066, 0.315405, 23.0197, 353.511, -39.1795)
@@ -22032,17 +22031,18 @@ skeleton = NodePath("../Death PLane")
 shape = SubResource("BoxShape3D_wdnfq")
 
 [node name="Death PLane2" type="MeshInstance3D" parent="Blocks/Canopy Level" groups=["Trap"]]
-transform = Transform3D(13.3096, 0, -1.37091e-06, 0, 0.999999, 0, 1.3113e-06, 0, 9.98295, 20.8146, 291.169, -11.3336)
+transform = Transform3D(11.5265, 0, 4.99147, 0, 0.999999, 0, -6.6548, 0, 8.64549, 20.8146, 291.169, -11.3336)
 mesh = SubResource("PlaneMesh_7deav")
 skeleton = NodePath("../Death PLane")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Blocks/Canopy Level/Death PLane2" groups=["Trap"]]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Blocks/Canopy Level/Death PLane2/StaticBody3D" groups=["Trap"]]
 shape = SubResource("BoxShape3D_wdnfq")
 
 [node name="Death PLane" type="MeshInstance3D" parent="Blocks/Canopy Level" groups=["Trap"]]
-transform = Transform3D(-49.4663, 0, 0, 0, 1, 0, 0, 0, 52.6042, 13.8692, 243.641, -15.0961)
+transform = Transform3D(-44.2868, 0, 23.4341, 0, 0.999999, 0, 22.0362, 0, 47.0961, 17.2385, 243.641, -38.0857)
 mesh = SubResource("PlaneMesh_7deav")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Blocks/Canopy Level/Death PLane" groups=["Trap"]]

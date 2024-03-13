@@ -14,11 +14,6 @@
 [ext_resource type="PackedScene" uid="uid://dtjvjdjl8cs6e" path="res://models/flag.glb" id="12_dxvq3"]
 [ext_resource type="Script" path="res://scripts/CheckpointPlacer.gd" id="13_14ysj"]
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_bpoe2"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_qpj2l"]
-size = Vector3(2, 1, 2)
-
 [sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_piwoq"]
 margin = 0.674
 length = 0.25
@@ -781,6 +776,11 @@ face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_bpoe2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qpj2l"]
+size = Vector3(2, 1, 2)
 
 [sub_resource type="Resource" id="Resource_n0l4j"]
 script = ExtResource("8_5rbnc")
@@ -16963,15 +16963,6 @@ environment = ExtResource("1_q0wml")
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 257.881, 75.3777, -307.908)
 view = NodePath("../View")
 jump_strength = 8
-
-[node name="Death PLane" type="MeshInstance3D" parent="Player" groups=["Trap"]]
-transform = Transform3D(-49.4663, 0, 0, 0, 1, 0, 0, 0, 52.6042, 13.8692, 243.641, -15.0961)
-mesh = SubResource("PlaneMesh_bpoe2")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Player/Death PLane" groups=["Trap"]]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player/Death PLane/StaticBody3D" groups=["Trap"]]
-shape = SubResource("BoxShape3D_qpj2l")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target")]
 transform = Transform3D(-0.0854159, -0.294963, 0.951682, -0.00498856, 0.955288, 0.295633, -0.996333, 0.0205044, -0.0830682, 335.229, 95.538, -316.692)

@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Heckpooper 3D Level Design"
 config/tags=PackedStringArray("starterkit")
-run/main_scene="res://scenes/test_scene.tscn"
+run/main_scene="res://scenes/Base_Level_Template.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://Logo.webp"
 

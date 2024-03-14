@@ -18981,7 +18981,7 @@ transform = Transform3D(0.88999, 0, 0.45598, 0, 1, 0, -0.45598, 0, 0.88999, -76.
 transform = Transform3D(0.911109, 0, 0.412167, 0, 1, 0, -0.412167, 0, 0.911109, -80.112, 235.697, -221.808)
 
 [node name="newCoin63" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(0.911109, 0, 0.412167, 0, 1, 0, -0.412167, 0, 0.911109, -84.6326, 236.531, -219.785)
+transform = Transform3D(0.911109, 0, 0.412167, 0, 1, 0, -0.412167, 0, 0.911109, -84.6327, 236.531, -219.785)
 
 [node name="Blocks" type="Node3D" parent="."]
 

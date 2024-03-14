@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bel4uw02litqe"]
+
+[ext_resource type="Texture2D" uid="uid://cthey6e1r67ad" path="res://sprites/a1-plank-rawflat.png" id="1_tb75l"]
+
+[resource]
+albedo_texture = ExtResource("1_tb75l")

@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b273iig8wyxoq"]
+
+[ext_resource type="Texture2D" uid="uid://d1i1fsdr188mj" path="res://sprites/a1-stonecobble-darkfrench.png" id="1_tycjb"]
+
+[resource]
+shading_mode = 0
+albedo_color = Color(0.843137, 0.843137, 0.843137, 1)
+albedo_texture = ExtResource("1_tycjb")

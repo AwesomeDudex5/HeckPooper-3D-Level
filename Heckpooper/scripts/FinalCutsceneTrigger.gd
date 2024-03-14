@@ -13,9 +13,6 @@ func _process(delta):
 	pass
 	
 
-
-
-
 func _on_area_entered(area):
 	#print(area.get_parent().get_name())
 	if(area.is_in_group("Player")):

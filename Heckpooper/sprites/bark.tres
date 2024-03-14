@@ -3,6 +3,5 @@
 [ext_resource type="Texture2D" uid="uid://b06j17rcfy0hj" path="res://sprites/a1-plank-chestnutflat.png" id="1_2dolp"]
 
 [resource]
-shading_mode = 0
 albedo_color = Color(0.58, 0.53708, 0.5104, 1)
 albedo_texture = ExtResource("1_2dolp")

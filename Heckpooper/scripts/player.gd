@@ -7,6 +7,7 @@ signal coin_collected
 
 @export_subgroup("Properties")
 @export var movement_speed = 250
+@export var sprint_speed = 800
 @export var jump_strength = 7
 
 var movement_velocity: Vector3
@@ -17,6 +18,7 @@ var previously_floored = false
 
 var jump_single = true
 var jump_double = true
+var can_sprint = true
 
 var coins = 0
 
@@ -98,7 +100,24 @@ func handle_effects():
 
 func handle_controls(delta):
 	
-	# Movement
+	var speed_to_move = movement_speed
+	
+	#sprint check
+	#only sprint when on floor
+	if(is_on_floor()):
+		can_sprint = true
+	else:
+		can_sprint = false
+	
+	if(can_sprint == true):
+		if(Input.is_action_pressed("Sprint")):
+			speed_to_move = sprint_speed
+			jump_single = false
+			jump_double = false
+		else :
+			speed_to_move = movement_speed
+			jump_single = true
+			jump_double = true
 	
 	var input := Vector3.ZERO
 	
@@ -107,7 +126,7 @@ func handle_controls(delta):
 	
 	input = input.rotated(Vector3.UP, view.rotation.y).normalized()
 	
-	movement_velocity = input * movement_speed * delta
+	movement_velocity = input * speed_to_move * delta
 	
 	# Jumping
 	

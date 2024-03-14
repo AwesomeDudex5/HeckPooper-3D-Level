@@ -18579,7 +18579,7 @@ size = Vector3(0.956299, 4.37109, 12.6495)
 
 [sub_resource type="Animation" id="Animation_b8ju5"]
 resource_name = "Final_Cutscene"
-length = 2.1
+length = 5.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -18587,7 +18587,7 @@ tracks/0/path = NodePath("../HUD/Final Black Screen:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 2.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [false, true]
@@ -18697,13 +18697,13 @@ shadow_opacity = 0.75
 environment = ExtResource("1_q0wml")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_n6hmu")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -214.063, 306.74, -390.201)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -500, 57, -395)
 view = NodePath("../View")
 sprint_speed = 600
 jump_strength = 8
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target")]
-transform = Transform3D(-0.0854159, -0.294963, 0.951682, -0.00498856, 0.955288, 0.295633, -0.996333, 0.0205044, -0.0830682, -627.053, 95.538, -396.165)
+transform = Transform3D(-0.0854159, -0.294963, 0.951682, -0.00498856, 0.955288, 0.295633, -0.996333, 0.0205044, -0.0830682, -494.414, 57.5551, -394.46)
 script = ExtResource("3_8xhyb")
 target = NodePath("../Player")
 camera_mode = 1
@@ -18769,6 +18769,7 @@ visible = false
 offset_right = 1308.0
 offset_bottom = 758.0
 texture = ExtResource("7_pge58")
+expand_mode = 2
 
 [node name="Title" type="Label" parent="HUD/Final Black Screen"]
 layout_mode = 0
@@ -19857,7 +19858,7 @@ block_data = SubResource("Resource_dkvu8")
 materials = Array[Material]([ExtResource("10_r1fmh")])
 
 [node name="Block_2" type="Node3D" parent="Blocks/ApproachObjects/Burrow2" groups=["Ground"]]
-transform = Transform3D(0.8, 0, 0, 0, 0.1, 0, 0, 0, 0.8, 183, 70, -500)
+transform = Transform3D(0.8, 0, 0, 0, 0.1, 0, 0, 0, 0.8, -1000, 70, -1200)
 script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_hph10")
 materials = Array[Material]([ExtResource("10_r1fmh")])
@@ -19958,7 +19959,7 @@ mesh = SubResource("ArrayMesh_gesyx")
 skeleton = NodePath("")
 
 [node name="StaticBody3D9" type="StaticBody3D" parent="Blocks/ApproachObjects/Tent"]
-transform = Transform3D(0.255497, 0, -0.96681, 0, 1, 0, 0.96681, 0, 0.255497, -154.454, 138.579, -481.771)
+transform = Transform3D(0.0403427, 0, 0.49837, 0, 0.5, 0, -0.49837, 0, 0.0403427, -154.165, 137.205, -483.296)
 
 [node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D9"]
 transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
@@ -19994,7 +19995,7 @@ mesh = SubResource("ArrayMesh_gesyx")
 skeleton = NodePath("")
 
 [node name="StaticBody3D10" type="StaticBody3D" parent="Blocks/ApproachObjects/Tent"]
-transform = Transform3D(0.255497, 0, -0.96681, 0, 0.607933, 0, 0.96681, 0, 0.255497, -275.071, 196.348, -483.65)
+transform = Transform3D(0.62428, 0, 0.316661, 0, 0.6, 0, -0.316661, 0, 0.62428, -275.071, 196.348, -483.65)
 
 [node name="Tent_rods" type="MeshInstance3D" parent="Blocks/ApproachObjects/Tent/StaticBody3D10"]
 transform = Transform3D(1, 2.98023e-08, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 0)
@@ -20204,7 +20205,7 @@ block_data = SubResource("Resource_ohyhf")
 materials = Array[Material]([ExtResource("17_klr4v")])
 
 [node name="flag2" parent="Blocks/Trunk/Entrance Hall/Block_9" instance=ExtResource("12_dxvq3")]
-transform = Transform3D(-1, 7.53644e-15, 0, 7.10543e-15, 1, -7.10543e-15, 0, -7.53644e-15, -1, -11.1188, 17.9947, -0.144005)
+transform = Transform3D(-1, 7.53644e-15, 0, 7.10543e-15, 1, -7.10543e-15, 0, -7.53644e-15, -1, -9.57224, 17.9947, 1.41138)
 
 [node name="Block_0" type="Node3D" parent="Blocks/Trunk/Entrance Hall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 1, -69)
@@ -24819,6 +24820,7 @@ shape = SubResource("BoxShape3D_wdnfq")
 
 [node name="North Label" type="Label3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 713.3, 216.882, -295)
+visible = false
 pixel_size = 0.25
 modulate = Color(0, 0, 0, 1)
 text = "NORTH"
@@ -24826,6 +24828,7 @@ font_size = 1000
 
 [node name="South Label" type="Label3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1095, 216.882, -295)
+visible = false
 pixel_size = 0.25
 modulate = Color(0, 0, 0, 1)
 text = "SOUTH
@@ -24834,6 +24837,7 @@ font_size = 1000
 
 [node name="West Label" type="Label3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.8593, 216.882, -1316.26)
+visible = false
 pixel_size = 0.25
 modulate = Color(0, 0, 0, 1)
 text = "WEST"
@@ -24841,6 +24845,7 @@ font_size = 1000
 
 [node name="East Label" type="Label3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -90.8593, 216.882, 617.74)
+visible = false
 pixel_size = 0.25
 modulate = Color(0, 0, 0, 1)
 text = "EAST"
@@ -24858,6 +24863,7 @@ shape = SubResource("BoxShape3D_xdtyk")
 libraries = {
 "": SubResource("AnimationLibrary_rt264")
 }
+speed_scale = 0.4
 
 [node name="fallingsound" type="AudioStreamPlayer3D" parent="Final Cutscene Trigger"]
 stream = ExtResource("24_nv3f5")

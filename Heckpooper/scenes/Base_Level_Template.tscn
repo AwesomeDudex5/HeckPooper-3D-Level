@@ -12568,7 +12568,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_8t1dx"]
+[sub_resource type="Resource" id="Resource_t2ol2"]
 script = ExtResource("8_5rbnc")
 selected = false
 active = false
@@ -12592,7 +12592,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_qlf4f"]
+[sub_resource type="Resource" id="Resource_lxt0k"]
 script = ExtResource("8_5rbnc")
 selected = false
 active = false
@@ -12616,7 +12616,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_f6xs7"]
+[sub_resource type="Resource" id="Resource_r0dnt"]
 script = ExtResource("8_5rbnc")
 selected = false
 active = false
@@ -12640,7 +12640,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_6vf2i"]
+[sub_resource type="Resource" id="Resource_vo0mc"]
 script = ExtResource("8_5rbnc")
 selected = false
 active = false
@@ -12664,7 +12664,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_8acnt"]
+[sub_resource type="Resource" id="Resource_igil5"]
 script = ExtResource("8_5rbnc")
 selected = false
 active = false
@@ -12688,7 +12688,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 1, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_6iyul"]
+[sub_resource type="Resource" id="Resource_jhwb0"]
 script = ExtResource("8_5rbnc")
 selected = false
 active = false
@@ -12712,7 +12712,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_8hhnr"]
+[sub_resource type="Resource" id="Resource_ta284"]
 script = ExtResource("8_5rbnc")
 selected = false
 active = false
@@ -13936,7 +13936,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_vy57x"]
+[sub_resource type="Resource" id="Resource_hg56h"]
 script = ExtResource("8_5rbnc")
 selected = false
 active = false
@@ -13960,7 +13960,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_mk4ci"]
+[sub_resource type="Resource" id="Resource_qjdeh"]
 script = ExtResource("8_5rbnc")
 selected = false
 active = false
@@ -14008,7 +14008,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_4q1kt"]
+[sub_resource type="Resource" id="Resource_c3hah"]
 script = ExtResource("8_5rbnc")
 selected = false
 active = false
@@ -14032,7 +14032,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_5uav1"]
+[sub_resource type="Resource" id="Resource_feb2w"]
 script = ExtResource("8_5rbnc")
 selected = false
 active = false
@@ -14248,7 +14248,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_sqfmx"]
+[sub_resource type="Resource" id="Resource_qao0j"]
 script = ExtResource("8_5rbnc")
 selected = false
 active = false
@@ -14320,7 +14320,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_jgqna"]
+[sub_resource type="Resource" id="Resource_gb50y"]
 script = ExtResource("8_5rbnc")
 selected = false
 active = false
@@ -22917,6 +22917,7 @@ materials = Array[Material]([ExtResource("17_klr4v")])
 
 [node name="Block_14" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge/windows"]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, -98.1133, -48, -6.83945)
+visible = false
 script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_j5kau")
 materials = Array[Material]([ExtResource("17_klr4v")])
@@ -22966,44 +22967,44 @@ materials = Array[Material]([ExtResource("17_klr4v")])
 [node name="Block_0" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge/windows"]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, -40.117, -7, -149.719)
 script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_8t1dx")
-materials = Array[Material]([ExtResource("17_klr4v")])
+block_data = SubResource("Resource_t2ol2")
+materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Block_5" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge/windows"]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, -32.3896, -7, -151.789)
 script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_qlf4f")
-materials = Array[Material]([ExtResource("17_klr4v")])
+block_data = SubResource("Resource_lxt0k")
+materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Block_6" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge/windows"]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, -52.674, -7, -146.354)
 script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_f6xs7")
-materials = Array[Material]([ExtResource("17_klr4v")])
+block_data = SubResource("Resource_r0dnt")
+materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Block_8" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge/windows"]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, -29.4918, -6, -152.566)
 script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_6vf2i")
-materials = Array[Material]([ExtResource("17_klr4v")])
+block_data = SubResource("Resource_vo0mc")
+materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Block_9" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge/windows"]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, -25.7668, -7, -161.846)
 script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_8acnt")
-materials = Array[Material]([ExtResource("17_klr4v")])
+block_data = SubResource("Resource_igil5")
+materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Block_23" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge/windows"]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, 0.451923, -7, -160.589)
 script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_6iyul")
-materials = Array[Material]([ExtResource("17_klr4v")])
+block_data = SubResource("Resource_jhwb0")
+materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Block_27" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge/windows"]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, -16.1075, -7, -164.434)
 script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_8hhnr")
-materials = Array[Material]([ExtResource("17_klr4v")])
+block_data = SubResource("Resource_ta284")
+materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Block_28" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge/windows"]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, -17.6604, -6, -170.23)
@@ -23308,14 +23309,14 @@ materials = Array[Material]([ExtResource("17_klr4v")])
 [node name="Block_47" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -105, 57, 31)
 script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_vy57x")
-materials = Array[Material]([ExtResource("17_klr4v")])
+block_data = SubResource("Resource_hg56h")
+materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Block_48" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -104, 57, 40)
 script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_mk4ci")
-materials = Array[Material]([ExtResource("17_klr4v")])
+block_data = SubResource("Resource_qjdeh")
+materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Block_49" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 52, 23)
@@ -23326,13 +23327,13 @@ materials = Array[Material]([ExtResource("17_klr4v")])
 [node name="Block_50" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 52, 24)
 script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_4q1kt")
-materials = Array[Material]([ExtResource("17_klr4v")])
+block_data = SubResource("Resource_c3hah")
+materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Block_51" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -105, 52, 31)
 script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_5uav1")
+block_data = SubResource("Resource_feb2w")
 materials = Array[Material]([ExtResource("17_klr4v")])
 
 [node name="Block_53" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge"]
@@ -23386,8 +23387,8 @@ materials = Array[Material]([ExtResource("17_klr4v")])
 [node name="Block_52" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -105, 57, 43)
 script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_sqfmx")
-materials = Array[Material]([ExtResource("17_klr4v")])
+block_data = SubResource("Resource_qao0j")
+materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Block_62" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge"]
 transform = Transform3D(-0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, -0.258819, -41.271, 46, 70.0693)
@@ -23407,8 +23408,8 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 38.967
 [node name="Block_61" type="Node3D" parent="Blocks/Trunk/Bridge Between"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 7, 1)
 script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_jgqna")
-materials = Array[Material]([ExtResource("17_klr4v")])
+block_data = SubResource("Resource_gb50y")
+materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Block_62" type="Node3D" parent="Blocks/Trunk/Bridge Between"]
 transform = Transform3D(1, -2.18557e-08, -5.85622e-09, 2.18557e-08, 0.866025, 0.5, -5.85622e-09, -0.5, 0.866025, -3, 7, 11)

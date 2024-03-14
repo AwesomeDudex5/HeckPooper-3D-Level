@@ -1,7 +1,8 @@
 [gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://csa6j5xxdknlo"]
 
-[ext_resource type="Texture2D" uid="uid://doaoo2j6qhsva" path="res://sprites/a1-bark-jungledarkvertical.png" id="1_iw5u1"]
+[ext_resource type="Texture2D" uid="uid://b06j17rcfy0hj" path="res://sprites/a1-plank-chestnutflat.png" id="1_2dolp"]
 
 [resource]
 shading_mode = 0
-albedo_texture = ExtResource("1_iw5u1")
+albedo_color = Color(0.58, 0.53708, 0.5104, 1)
+albedo_texture = ExtResource("1_2dolp")

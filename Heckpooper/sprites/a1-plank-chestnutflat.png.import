@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccep8t60iwip6"
-path.s3tc="res://.godot/imported/a1-blockgold-panelclassic.png-1b8ff745d87e9f902f4673a44f549764.s3tc.ctex"
+uid="uid://b06j17rcfy0hj"
+path.s3tc="res://.godot/imported/a1-plank-chestnutflat.png-5c76b1d522ae5acef0e461feafb16f3f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://sprites/a1-blockgold-panelclassic.png"
-dest_files=["res://.godot/imported/a1-blockgold-panelclassic.png-1b8ff745d87e9f902f4673a44f549764.s3tc.ctex"]
+source_file="res://sprites/a1-plank-chestnutflat.png"
+dest_files=["res://.godot/imported/a1-plank-chestnutflat.png-5c76b1d522ae5acef0e461feafb16f3f.s3tc.ctex"]
 
 [params]
 

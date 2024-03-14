@@ -20301,7 +20301,8 @@ block_data = SubResource("Resource_cuncr")
 materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Death PLane" type="MeshInstance3D" parent="Blocks/Trunk/Entrance Hall" groups=["Trap"]]
-transform = Transform3D(-158.334, 0, 1.33514e-05, 0, 3.20084, 0, 1.14441e-05, 0, 168.378, -28.9539, -4.86475, 65.972)
+transform = Transform3D(-158.334, 0, 1.33514e-05, 0, 3.20084, 0, 9.53674e-06, 0, 168.378, -28.9539, -4.86475, 65.972)
+visible = false
 mesh = SubResource("PlaneMesh_bpoe2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Blocks/Trunk/Entrance Hall/Death PLane" groups=["Trap"]]
@@ -24790,6 +24791,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_dobwe")
 
 [node name="Death PLane3" type="MeshInstance3D" parent="Blocks/Canopy Level" groups=["Trap"]]
 transform = Transform3D(20.5495, 0, -1.33514e-05, 0, 0.999998, 0, 3.33786e-06, 0, 32.9279, -2.30334, 288.29, -21.93)
+visible = false
 mesh = SubResource("PlaneMesh_7deav")
 skeleton = NodePath("../Death PLane")
 
@@ -24800,6 +24802,7 @@ shape = SubResource("BoxShape3D_wdnfq")
 
 [node name="Death PLane2" type="MeshInstance3D" parent="Blocks/Canopy Level" groups=["Trap"]]
 transform = Transform3D(11.5265, 0, 4.99147, 0, 0.999999, 0, -6.6548, 0, 8.64549, 20.8146, 291.169, -11.3336)
+visible = false
 mesh = SubResource("PlaneMesh_7deav")
 skeleton = NodePath("../Death PLane")
 
@@ -24811,6 +24814,7 @@ shape = SubResource("BoxShape3D_wdnfq")
 
 [node name="Death PLane" type="MeshInstance3D" parent="Blocks/Canopy Level" groups=["Trap"]]
 transform = Transform3D(-44.2868, 0, 23.4341, 0, 0.999999, 0, 22.0362, 0, 47.0961, 17.2385, 243.641, -38.0857)
+visible = false
 mesh = SubResource("PlaneMesh_7deav")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Blocks/Canopy Level/Death PLane" groups=["Trap"]]

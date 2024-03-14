@@ -1,4 +1,4 @@
-[gd_scene load_steps=874 format=3 uid="uid://bswi03b2842ct"]
+[gd_scene load_steps=872 format=3 uid="uid://bswi03b2842ct"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_q0wml"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_n6hmu"]
@@ -12712,30 +12712,6 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="Resource" id="Resource_s08vv"]
-script = ExtResource("8_5rbnc")
-selected = false
-active = false
-collsion = true
-physics_layer = 1
-physics_mask = 1
-vertex_points = PackedVector3Array(0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0)
-vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
-active_vertex = -1
-edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
-edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-active_edge = -1
-edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
-face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
-face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
-face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
-face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
-face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
-face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
-active_face = -1
-face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
-
 [sub_resource type="Resource" id="Resource_8hhnr"]
 script = ExtResource("8_5rbnc")
 selected = false
@@ -13453,30 +13429,6 @@ face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform
 face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
 face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
 face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
-active_face = -1
-face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
-
-[sub_resource type="Resource" id="Resource_q3mp5"]
-script = ExtResource("8_5rbnc")
-selected = false
-active = false
-collsion = true
-physics_layer = 1
-physics_mask = 1
-vertex_points = PackedVector3Array(0, 1, 2, 0, 1, 0, 1, 1, 0, 1, 1, 2, 1, 0, 2, 1, 0, 0, 0, 0, 0, 0, 0, 2)
-vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
-active_vertex = -1
-edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 4, 3, 2, 5, 5, 4, 6, 5, 1, 6, 4, 7, 7, 0, 6, 7)
-edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-active_edge = -1
-edge_face_indices = PackedInt32Array(0, 5, 0, 2, 0, 1, 0, 3, 1, 3, 1, 2, 1, 4, 2, 4, 2, 5, 3, 4, 3, 5, 4, 5)
-face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
-face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 4, 3, 2, 5, 6, 5, 2, 1, 0, 3, 4, 7, 6, 7, 4, 5, 0, 7, 6, 1)
-face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
-face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
-face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
-face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-face_selected = PackedByteArray(0, 0, 0, 1, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
@@ -18839,6 +18791,54 @@ text = "PAUSED"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Misc New Coins" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -423.901, 66.3111, -307.416)
+
+[node name="newCoin1" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -198.962, 76.2909, -254.599)
+
+[node name="newCoin2" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.962, 76.2909, -253.599)
+
+[node name="newCoin3" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -202.001, 76.2909, -246.027)
+
+[node name="newCoin4" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.001, 76.2909, -230.027)
+
+[node name="newCoin5" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -204.001, 76.2909, -227.027)
+
+[node name="newCoin6" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.683, 78.2909, -223.801)
+
+[node name="newCoin7" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.187, 80.2909, -221.959)
+
+[node name="newCoin8" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.187, 85.2909, -235.959)
+
+[node name="newCoin9" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -206.386, 88.1006, -238.746)
+
+[node name="newCoin10" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -205.093, 104.101, -235.507)
+
+[node name="newCoin11" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -204.397, 106.101, -229.793)
+
+[node name="newCoin12" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -197.807, 106.101, -230.715)
+
+[node name="newCoin13" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -191.118, 106.101, -231.78)
+
+[node name="newCoin14" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -189.126, 106.101, -221.233)
+
+[node name="newCoin15" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -195.879, 106.101, -220.249)
+
 [node name="Blocks" type="Node3D" parent="."]
 
 [node name="Tree Block" type="Node3D" parent="Blocks" groups=["Tree"]]
@@ -22950,12 +22950,6 @@ script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_6iyul")
 materials = Array[Material]([ExtResource("17_klr4v")])
 
-[node name="Block_25" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge/windows"]
-transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, -24.4727, -6, -157.016)
-script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_s08vv")
-materials = Array[Material]([ExtResource("17_klr4v")])
-
 [node name="Block_27" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge/windows"]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, -16.1075, -7, -164.434)
 script = ExtResource("7_kpve0")
@@ -23134,12 +23128,6 @@ materials = Array[Material]([ExtResource("18_0j8v3")])
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80, 45, 42)
 script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_dm2y3")
-materials = Array[Material]([ExtResource("18_0j8v3")])
-
-[node name="Block_24" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75, 53, 18)
-script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_q3mp5")
 materials = Array[Material]([ExtResource("18_0j8v3")])
 
 [node name="Block_25" type="Node3D" parent="Blocks/Trunk/Cliff Tube Stonehenge"]

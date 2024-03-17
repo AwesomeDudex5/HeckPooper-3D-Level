@@ -1,4 +1,4 @@
-[gd_scene load_steps=874 format=3 uid="uid://bswi03b2842ct"]
+[gd_scene load_steps=872 format=3 uid="uid://bswi03b2842ct"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_q0wml"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_n6hmu"]
@@ -15,7 +15,6 @@
 [ext_resource type="Material" uid="uid://donu7f38x7oyp" path="res://sprites/dirt.tres" id="10_r1fmh"]
 [ext_resource type="Texture2D" uid="uid://kju0q6cgtr7v" path="res://sprites/a1-blockiron-panelclassic.png" id="10_tti8p"]
 [ext_resource type="PackedScene" uid="uid://dfpisimsgf5ce" path="res://objects/coin.tscn" id="11_q7sy3"]
-[ext_resource type="PackedScene" uid="uid://dtjvjdjl8cs6e" path="res://models/flag.glb" id="12_dxvq3"]
 [ext_resource type="Texture2D" uid="uid://gbekhs3xc0f1" path="res://sprites/a1-clothpurple-rough.png" id="12_yan7t"]
 [ext_resource type="Script" path="res://scripts/CheckpointPlacer.gd" id="13_14ysj"]
 [ext_resource type="Material" uid="uid://2yut3iok36c5" path="res://sprites/rot.tres" id="13_q8dm2"]
@@ -825,30 +824,6 @@ albedo_texture = ExtResource("12_yan7t")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d7dxt"]
 albedo_texture = ExtResource("12_yan7t")
-
-[sub_resource type="Resource" id="Resource_fqrnn"]
-script = ExtResource("8_5rbnc")
-selected = false
-active = false
-collsion = true
-physics_layer = 1
-physics_mask = 1
-vertex_points = PackedVector3Array(0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0)
-vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
-active_vertex = -1
-edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
-edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-active_edge = -1
-edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
-face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
-face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
-face_material_indices = PackedInt32Array(-1, -1, -1, -1, -1, -1)
-face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
-face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
-face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
-active_face = -1
-face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
 [sub_resource type="Resource" id="Resource_pkckq"]
 script = ExtResource("8_5rbnc")
@@ -18792,13 +18767,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -198.962, 76.2909, -254.599)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.962, 76.2909, -253.599)
 
 [node name="newCoin3" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -202.001, 76.2909, -246.027)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -199.743, 78.8466, -237.283)
 
 [node name="newCoin4" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.001, 76.2909, -230.027)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -201.836, 76.1641, -230.257)
 
 [node name="newCoin5" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -204.001, 76.2909, -227.027)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -204.755, 81.9831, -233.502)
 
 [node name="newCoin6" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.683, 78.2909, -223.801)
@@ -18835,6 +18810,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -195.879, 105.412, -220.249)
 
 [node name="newCoin17" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -183.998, 106.162, -221.718)
+
+[node name="newCoin64" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, -180.089, 106.162, -219.684)
 
 [node name="newCoin18" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
 transform = Transform3D(-0.111469, 0, 0.993768, 0, 1, 0, -0.993768, 0, -0.111469, -183.86, 102.18, -213.689)
@@ -20069,24 +20047,6 @@ skeleton = NodePath("")
 [node name="Trunk" type="Node3D" parent="Blocks"]
 transform = Transform3D(-0.400893, 0, 0.916125, 0, 1, 0, -0.916125, 0, -0.400893, 50.6977, 118.189, -587.164)
 
-[node name="Misc Stuff To Copy Paste" type="Node3D" parent="Blocks/Trunk"]
-transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 28.4842, 9, -290.287)
-visible = false
-
-[node name="copy and paste me for folders" type="Node3D" parent="Blocks/Trunk/Misc Stuff To Copy Paste"]
-transform = Transform3D(0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 16.9092, 9, -17.2864)
-
-[node name="REFERENCE 1x1 BLOCK" type="Node3D" parent="Blocks/Trunk/Misc Stuff To Copy Paste"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 3)
-script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_fqrnn")
-
-[node name="coin2" parent="Blocks/Trunk/Misc Stuff To Copy Paste" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3282, -2.052, 1.51858)
-
-[node name="flag" parent="Blocks/Trunk/Misc Stuff To Copy Paste" instance=ExtResource("12_dxvq3")]
-transform = Transform3D(-1, 7.53644e-15, 0, 7.10543e-15, 1, -7.10543e-15, 0, -7.53644e-15, -1, -16.1188, 9.99465, 4.856)
-
 [node name="Steps" type="Node3D" parent="Blocks/Trunk"]
 transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, -31.6017, 0, -334.215)
 
@@ -20203,9 +20163,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 1, -69)
 script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_ohyhf")
 materials = Array[Material]([ExtResource("17_klr4v")])
-
-[node name="flag2" parent="Blocks/Trunk/Entrance Hall/Block_9" instance=ExtResource("12_dxvq3")]
-transform = Transform3D(-1, 7.53644e-15, 0, 7.10543e-15, 1, -7.10543e-15, 0, -7.53644e-15, -1, -9.57224, 17.9947, 1.41138)
 
 [node name="Block_0" type="Node3D" parent="Blocks/Trunk/Entrance Hall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 1, -69)

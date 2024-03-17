@@ -1,4 +1,4 @@
-[gd_scene load_steps=874 format=3 uid="uid://bswi03b2842ct"]
+[gd_scene load_steps=875 format=3 uid="uid://bswi03b2842ct"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_q0wml"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_n6hmu"]
@@ -26,6 +26,7 @@
 [ext_resource type="AudioStream" uid="uid://cr5prbjheabel" path="res://sounds/cartoon_fall.wav" id="24_nv3f5"]
 [ext_resource type="Script" path="res://scripts/FinalCutsceneTrigger.gd" id="24_y0am3"]
 [ext_resource type="AudioStream" uid="uid://cqmini8nb3w0j" path="res://sounds/splat.wav" id="25_3c3v2"]
+[ext_resource type="PackedScene" uid="uid://xy8rvnjp22n5" path="res://models/character.glb" id="27_l4von"]
 
 [sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_piwoq"]
 margin = 0.674
@@ -18583,7 +18584,7 @@ length = 5.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../HUD/Final Black Screen:visible")
+tracks/0/path = NodePath("../HUD/Control/Final Black Screen:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -18628,13 +18629,25 @@ tracks/3/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../HUD/Control:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
 
 [sub_resource type="Animation" id="Animation_oeh2u"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../HUD/Final Black Screen:visible")
+tracks/0/path = NodePath("../HUD/Control/Final Black Screen:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -18674,6 +18687,18 @@ tracks/3/path = NodePath("fallingsound:playing")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../HUD/Control:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -18752,10 +18777,10 @@ label_settings = SubResource("LabelSettings_38ys3")
 [node name="Pause Screen" type="CanvasLayer" parent="HUD"]
 
 [node name="Pause Text" type="Label" parent="HUD/Pause Screen"]
-offset_left = 487.0
-offset_top = 307.0
-offset_right = 925.0
-offset_bottom = 490.0
+offset_left = 336.0
+offset_top = 241.0
+offset_right = 774.0
+offset_bottom = 424.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 30
@@ -18764,20 +18789,39 @@ text = "PAUSED"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Final Black Screen" type="TextureRect" parent="HUD"]
+[node name="Control" type="Control" parent="HUD"]
 visible = false
-offset_right = 1308.0
-offset_bottom = 758.0
-texture = ExtResource("7_pge58")
-expand_mode = 2
+layout_direction = 1
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Title" type="Label" parent="HUD/Final Black Screen"]
+[node name="Final Black Screen" type="TextureRect" parent="HUD/Control"]
+visible = false
 layout_mode = 0
-offset_left = 439.0
-offset_top = 273.0
-offset_right = 841.0
-offset_bottom = 467.0
-theme_override_font_sizes/font_size = 50
+offset_left = -1044.0
+offset_top = -481.0
+offset_right = 1588.0
+offset_bottom = 2149.0
+scale = Vector2(1, 0.52)
+texture = ExtResource("7_pge58")
+
+[node name="Title" type="Label" parent="HUD/Control/Final Black Screen"]
+layout_mode = 0
+offset_left = 789.0
+offset_top = 642.308
+offset_right = 1318.0
+offset_bottom = 1186.31
+theme_override_font_sizes/font_size = 120
 text = "Tantalus "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -18954,7 +18998,7 @@ transform = Transform3D(0.947356, 0, 0.320183, 0, 1, 0, -0.320183, 0, 0.947356, 
 transform = Transform3D(0.947356, 0, 0.320183, 0, 1, 0, -0.320183, 0, 0.947356, -92.1862, 219.696, -246.252)
 
 [node name="newCoin57" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(0.660343, 0, 0.750965, 0, 1, 0, -0.750965, 0, 0.660343, -93.299, 221.592, -245.333)
+transform = Transform3D(0.660343, 0, 0.750965, 0, 1, 0, -0.750965, 0, 0.660343, -94.6035, 221.518, -244.499)
 
 [node name="newCoin58" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
 transform = Transform3D(0.390169, 0, 0.920743, 0, 1, 0, -0.920743, 0, 0.390169, -95.2802, 223.458, -240.296)
@@ -18972,7 +19016,7 @@ transform = Transform3D(0.88999, 0, 0.45598, 0, 1, 0, -0.45598, 0, 0.88999, -76.
 transform = Transform3D(0.911109, 0, 0.412167, 0, 1, 0, -0.412167, 0, 0.911109, -80.112, 235.697, -221.808)
 
 [node name="newCoin63" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(0.911109, 0, 0.412167, 0, 1, 0, -0.412167, 0, 0.911109, -84.6326, 236.531, -219.785)
+transform = Transform3D(0.911109, 0, 0.412167, 0, 1, 0, -0.412167, 0, 0.911109, -82.8052, 236.531, -221.042)
 
 [node name="Blocks" type="Node3D" parent="."]
 
@@ -24874,6 +24918,15 @@ stream = ExtResource("24_nv3f5")
 
 [node name="splatsound" type="AudioStreamPlayer3D" parent="Final Cutscene Trigger"]
 stream = ExtResource("25_3c3v2")
+
+[node name="character" parent="." instance=ExtResource("27_l4von")]
+transform = Transform3D(0.88999, -0.454378, 0.0381871, 0, -0.0837474, -0.996487, 0.45598, 0.886864, -0.0745344, -252.923, 222.57, -381.757)
+
+[node name="character2" parent="." instance=ExtResource("27_l4von")]
+transform = Transform3D(0.586528, 0.807084, -0.0678295, 6.71279e-09, -0.0837474, -0.996487, -0.809929, 0.584467, -0.0491202, -260.112, 222.57, -379.785)
+
+[node name="character3" parent="." instance=ExtResource("27_l4von")]
+transform = Transform3D(0.0138748, 0.996391, -0.0837394, 6.71279e-09, -0.0837474, -0.996487, -0.999904, 0.0138262, -0.001162, -257.344, 222.57, -377.129)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="area_entered" from="Blocks/Canopy Level/Checkpoint Placer/Detection Sphere/Area3D" to="Blocks/Canopy Level/Checkpoint Placer" method="_on_area_3d_area_entered"]

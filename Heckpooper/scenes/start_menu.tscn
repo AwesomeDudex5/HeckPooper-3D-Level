@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnxphyjufpbwx"]
+
+[ext_resource type="Script" path="res://scripts/button.gd" id="1_xojxl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_55fsb"]
+bg_color = Color(0.686275, 0.341176, 0.294118, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ik8nl"]
+bg_color = Color(0.929412, 0.929412, 0.929412, 1)
+
+[sub_resource type="Theme" id="Theme_xwper"]
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/font_sizes/font_size = 30
+Button/styles/hover = SubResource("StyleBoxFlat_55fsb")
+Button/styles/normal = SubResource("StyleBoxFlat_ik8nl")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -619.0
+offset_top = -351.0
+offset_right = 620.0
+offset_bottom = 355.0
+color = Color(0, 0, 0, 1)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = -113.0
+offset_top = -39.0
+offset_right = 88.0
+offset_bottom = 34.0
+theme = SubResource("Theme_xwper")
+text = "Start"
+script = ExtResource("1_xojxl")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -158.0
+offset_top = -159.0
+offset_right = 140.0
+offset_bottom = -35.0
+theme_override_font_sizes/font_size = 40
+text = "TANTALUS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

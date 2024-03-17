@@ -1,4 +1,4 @@
-[gd_scene load_steps=875 format=3 uid="uid://bswi03b2842ct"]
+[gd_scene load_steps=874 format=3 uid="uid://bswi03b2842ct"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_q0wml"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_n6hmu"]
@@ -4412,30 +4412,6 @@ face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wdnfq"]
 size = Vector3(2, 1, 2)
-
-[sub_resource type="Resource" id="Resource_ilxoi"]
-script = ExtResource("8_5rbnc")
-selected = false
-active = false
-collsion = true
-physics_layer = 1
-physics_mask = 1
-vertex_points = PackedVector3Array(0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0)
-vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
-active_vertex = -1
-edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
-edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-active_edge = -1
-edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
-face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
-face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
-face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
-face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
-face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
-face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
-active_face = -1
-face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
 [sub_resource type="Resource" id="Resource_hnnba"]
 script = ExtResource("8_5rbnc")
@@ -18836,13 +18812,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -198.962, 76.2909, -254.599)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.962, 76.2909, -253.599)
 
 [node name="newCoin3" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -202.001, 76.2909, -246.027)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -201.641, 76.865, -241.093)
+
+[node name="newCoin64" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -199.644, 78.9626, -237.528)
 
 [node name="newCoin4" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.001, 76.2909, -230.027)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -200.151, 75.9673, -230.332)
 
 [node name="newCoin5" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -204.001, 76.2909, -227.027)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -204.311, 75.9437, -227.205)
 
 [node name="newCoin6" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.683, 78.2909, -223.801)
@@ -18852,6 +18831,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.187, 80.2909, -221.959)
 
 [node name="newCoin8" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.187, 85.2909, -235.959)
+
+[node name="newCoin65" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -204.883, 81.8121, -233.573)
 
 [node name="newCoin9" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -206.386, 88.1006, -238.746)
@@ -18879,6 +18861,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -195.879, 105.412, -220.249)
 
 [node name="newCoin17" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -183.998, 106.162, -221.718)
+
+[node name="newCoin66" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -179.85, 106.162, -219.286)
 
 [node name="newCoin18" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
 transform = Transform3D(-0.111469, 0, 0.993768, 0, 1, 0, -0.993768, 0, -0.111469, -183.86, 102.18, -213.689)
@@ -18968,13 +18953,13 @@ transform = Transform3D(0.98135, 0, 0.192231, 0, 1, 0, -0.192231, 0, 0.98135, -1
 transform = Transform3D(0.98135, 0, 0.192231, 0, 1, 0, -0.192231, 0, 0.98135, -91.6033, 152.892, -165.084)
 
 [node name="newCoin47" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(0.98135, 0, 0.192231, 0, 1, 0, -0.192231, 0, 0.98135, -90.2195, 153.854, -167.748)
+transform = Transform3D(0.753759, 0, 0.657152, 0, 1, 0, -0.657152, 0, 0.753759, -91.8519, 153.854, -167.408)
 
 [node name="newCoin48" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(0.98135, 0, 0.192231, 0, 1, 0, -0.192231, 0, 0.98135, -88.8709, 154.674, -171.156)
+transform = Transform3D(0.753759, 0, 0.657152, 0, 1, 0, -0.657152, 0, 0.753759, -92.1589, 154.674, -170.288)
 
 [node name="newCoin49" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(0.98135, 0, 0.192231, 0, 1, 0, -0.192231, 0, 0.98135, -87.189, 155.389, -175.191)
+transform = Transform3D(0.98135, 0, 0.192231, 0, 1, 0, -0.192231, 0, 0.98135, -85.1492, 155.389, -175.191)
 
 [node name="newCoin50" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
 transform = Transform3D(-0.114885, 0, 0.993379, 0, 1, 0, -0.993379, 0, -0.114885, -75.3548, 210.236, -241.348)
@@ -19004,7 +18989,7 @@ transform = Transform3D(0.660343, 0, 0.750965, 0, 1, 0, -0.750965, 0, 0.660343, 
 transform = Transform3D(0.390169, 0, 0.920743, 0, 1, 0, -0.920743, 0, 0.390169, -95.2802, 223.458, -240.296)
 
 [node name="newCoin59" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
-transform = Transform3D(0.0376552, 0, 0.999291, 0, 1, 0, -0.999291, 0, 0.0376552, -96.6392, 225.126, -234.513)
+transform = Transform3D(0.0376552, 0, 0.999291, 0, 1, 0, -0.999291, 0, 0.0376552, -120.923, 210.927, -258.452)
 
 [node name="newCoin60" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
 transform = Transform3D(0.681615, 0, 0.731711, 0, 1, 0, -0.731711, 0, 0.681615, -73.7281, 232.026, -226.064)
@@ -19017,6 +19002,18 @@ transform = Transform3D(0.911109, 0, 0.412167, 0, 1, 0, -0.412167, 0, 0.911109, 
 
 [node name="newCoin63" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
 transform = Transform3D(0.911109, 0, 0.412167, 0, 1, 0, -0.412167, 0, 0.911109, -82.8052, 236.531, -221.042)
+
+[node name="newCoin67" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -91.094, 7.6889, -13.801)
+
+[node name="newCoin68" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -154.094, 7.6889, -26.801)
+
+[node name="newCoin69" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -232.094, 7.6889, -85.801)
+
+[node name="newCoin70" parent="Misc New Coins" instance=ExtResource("11_q7sy3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -243.094, 7.6889, -160.801)
 
 [node name="Blocks" type="Node3D" parent="."]
 
@@ -20248,9 +20245,6 @@ script = ExtResource("7_kpve0")
 block_data = SubResource("Resource_ohyhf")
 materials = Array[Material]([ExtResource("17_klr4v")])
 
-[node name="flag2" parent="Blocks/Trunk/Entrance Hall/Block_9" instance=ExtResource("12_dxvq3")]
-transform = Transform3D(-1, 7.53644e-15, 0, 7.10543e-15, 1, -7.10543e-15, 0, -7.53644e-15, -1, -9.57224, 17.9947, 1.41138)
-
 [node name="Block_0" type="Node3D" parent="Blocks/Trunk/Entrance Hall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 1, -69)
 script = ExtResource("7_kpve0")
@@ -21101,12 +21095,6 @@ shape = SubResource("BoxShape3D_wdnfq")
 
 [node name="Stairway To Heaven" type="Node3D" parent="Blocks/Trunk"]
 transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 57, 36, -302)
-
-[node name="block0" type="Node3D" parent="Blocks/Trunk/Stairway To Heaven"]
-transform = Transform3D(0.999937, -0.00623358, -0.00936179, 0.00628218, 0.999967, 0.00517173, 0.00932924, -0.00523021, 0.999943, 0, 1, 0)
-script = ExtResource("7_kpve0")
-block_data = SubResource("Resource_ilxoi")
-materials = Array[Material]([ExtResource("17_klr4v")])
 
 [node name="Block_3" type="Node3D" parent="Blocks/Trunk/Stairway To Heaven"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 70, 30)

@@ -21,5 +21,5 @@ func _on_area_entered(area):
 	if(area.is_in_group("Player")):
 		#print("Cutscene trigger")
 		cutscene_player.play("Final_Cutscene")
-		await get_tree().create_timer(4.0).timeout
+		await get_tree().create_timer(10.0).timeout
 		get_tree().quit()

@@ -23,6 +23,9 @@ Audio="*res://scripts/audio.gd"
 
 [display]
 
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/size/mode=2
 window/size/always_on_top=true
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"

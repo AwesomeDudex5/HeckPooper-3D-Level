@@ -18751,12 +18751,13 @@ text = "0"
 label_settings = SubResource("LabelSettings_38ys3")
 
 [node name="Pause Screen" type="CanvasLayer" parent="HUD"]
+follow_viewport_enabled = true
 
 [node name="Pause Text" type="Label" parent="HUD/Pause Screen"]
-offset_left = 336.0
-offset_top = 241.0
-offset_right = 774.0
-offset_bottom = 424.0
+offset_left = 572.0
+offset_top = 343.0
+offset_right = 1010.0
+offset_bottom = 526.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 30

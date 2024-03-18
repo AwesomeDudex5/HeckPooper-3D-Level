@@ -1,0 +1,9 @@
+
+How to Play:
+
+[W], [A], [S], [D] - Move
+[Shift] - Sprint
+[Space] Jump/Double Jump
+Mouse - Move Camera
+Mouse Wheel - Zoom In/Out
+[esc] - Pause
